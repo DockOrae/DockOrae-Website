@@ -10,11 +10,11 @@ categories:
 top: 86000
 ---
 
-::: en
+:::: en
 
 All of DockOrae's data (database, settings, users, app store data) lives in the **data directory** — backing up means archiving the data directory, and restoring means extracting it back.
 
-## One-click backup / restore (recommended)
+## One-click backup / restore (recommended) { lang="en" }
 
 For panels installed with the one-click script:
 
@@ -27,9 +27,9 @@ sudo bash install.sh restore
 
 The script backs up the entire data directory (`DM_DATA_DIR`), including the database, settings, and users.
 
-## Manual backup
+## Manual backup { lang="en" }
 
-### Compose method
+### Compose method { lang="en" }
 
 ```bash
 # Stop the panel for a safer backup (optional)
@@ -42,7 +42,7 @@ tar -czf dm-backup-$(date +%F).tar.gz -C /opt/docker-manager/data .
 docker compose start
 ```
 
-### Docker method (data volume)
+### Docker method (data volume) { lang="en" }
 
 ```bash
 docker run --rm \
@@ -51,13 +51,13 @@ docker run --rm \
   alpine tar -czf /backup/dm-backup.tar.gz -C /data .
 ```
 
-### Binary method
+### Binary method { lang="en" }
 
 ```bash
 tar -czf dm-backup.tar.gz -C /opt/docker-manager/data .
 ```
 
-## Restore
+## Restore { lang="en" }
 
 ```bash
 # Compose method
@@ -74,9 +74,10 @@ docker restart docker-manager-go
 
 ::: warning
 Restoring **overwrites the current data**. If the current data has any additions since the last backup, back it up first before restoring.
+
 :::
 
-## Scheduled backups (optional)
+## Scheduled backups (optional) { lang="en" }
 
 Example host crontab: back up every day at 02:00 and keep 7 days of backups:
 
@@ -90,9 +91,10 @@ Example host crontab: back up every day at 02:00 and keep 7 days of backups:
 - The database file is small (a few MB), so archiving is fast — feel free to back up frequently
 - Store backup files on a **different disk/machine than the panel data** (off-site backup)
 - Get into the habit of backing up before upgrades and major operations
-  :::
 
-## Data migration
+:::
+
+## Data migration { lang="en" }
 
 To migrate data when switching servers or reinstalling the OS:
 
@@ -101,13 +103,14 @@ To migrate data when switching servers or reinstalling the OS:
 3. Stop the panel → extract the backup into the new data directory → start the panel
 
 > Note: app store data is also included in the data directory; after migration, the store's app list is restored automatically.
-> :::
 
-::: zh-CN
+::::
+
+:::: zh-CN
 
 DockOrae 的全部数据(数据库、设置、用户、应用商店数据)都在**数据目录**中,备份 = 打包数据目录,恢复 = 解压回去。
 
-## 一键备份 / 恢复(推荐)
+## 一键备份 / 恢复(推荐) { lang="zh-CN" }
 
 由一键脚本安装的面板:
 
@@ -120,9 +123,9 @@ sudo bash install.sh restore
 
 脚本备份的是整个数据目录(`DM_DATA_DIR`),包含数据库、设置与用户。
 
-## 手动备份
+## 手动备份 { lang="zh-CN" }
 
-### Compose 方式
+### Compose 方式 { lang="zh-CN" }
 
 ```bash
 # 停面板备份更稳(可选)
@@ -135,7 +138,7 @@ tar -czf dm-backup-$(date +%F).tar.gz -C /opt/docker-manager/data .
 docker compose start
 ```
 
-### Docker 方式(数据卷)
+### Docker 方式(数据卷) { lang="zh-CN" }
 
 ```bash
 docker run --rm \
@@ -144,13 +147,13 @@ docker run --rm \
   alpine tar -czf /backup/dm-backup.tar.gz -C /data .
 ```
 
-### 二进制方式
+### 二进制方式 { lang="zh-CN" }
 
 ```bash
 tar -czf dm-backup.tar.gz -C /opt/docker-manager/data .
 ```
 
-## 恢复
+## 恢复 { lang="zh-CN" }
 
 ```bash
 # compose 方式
@@ -167,9 +170,10 @@ docker restart docker-manager-go
 
 ::: warning
 恢复会**覆盖当前数据**。恢复前如当前数据有新增,先备份当前数据。
+
 :::
 
-## 定时备份(可选)
+## 定时备份(可选) { lang="zh-CN" }
 
 宿主机 crontab 示例:每天 02:00 备份,保留 7 天:
 
@@ -183,9 +187,10 @@ docker restart docker-manager-go
 - 数据库文件较小(几 MB 级),打包速度快,可以放心高频备份
 - 备份文件请存放在**与面板数据不同的磁盘/机器**上(异地备份)
 - 升级前、大操作前养成备份习惯
-  :::
 
-## 数据迁移
+:::
+
+## 数据迁移 { lang="zh-CN" }
 
 换服务器 / 重装系统时迁移数据:
 
@@ -194,4 +199,5 @@ docker restart docker-manager-go
 3. 停止面板 → 解压备份到新数据目录 → 启动面板
 
 > 注意:应用商店数据也包含在数据目录中,迁移后商店应用列表自动恢复。
-> :::
+
+::::

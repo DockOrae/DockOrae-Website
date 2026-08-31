@@ -11,7 +11,7 @@ categories:
 top: 89000
 ---
 
-::: en
+:::: en
 
 Choose the uninstall method that matches your installation type:
 
@@ -22,7 +22,7 @@ Choose the uninstall method that matches your installation type:
 | [Docker](/guide/uninstall/docker)           | `docker rm -f docker-manager-go` | Kept |
 | [Binary](/guide/uninstall/binary)           | `systemctl stop` + delete files  | Kept |
 
-## Removing the program ≠ Removing the data
+## Removing the program ≠ Removing the data { lang="en" }
 
 DockOrae is designed to separate the **program** from the **data**:
 
@@ -41,16 +41,17 @@ Only delete the data directory or volume when you are certain you no longer need
 - docker run install: volume `docker-manager-data`
 
 It is recommended to [back up](/guide/backup) before deleting.
+
 :::
 
-## General steps
+## General steps { lang="en" }
 
 1. **Back up** (optional but recommended): `sudo bash install.sh backup` or manually archive the data directory
 2. Run the uninstall command for your installation type (see the sub-pages on the left)
 3. Decide whether you also need to delete the data directory
-   :::
 
-::: zh-CN
+::::
+:::: zh-CN
 
 按安装方式选择卸载方法:
 
@@ -61,7 +62,7 @@ It is recommended to [back up](/guide/backup) before deleting.
 | [Docker](/guide/uninstall/docker)         | `docker rm -f docker-manager-go` | 保留 |
 | [二进制](/guide/uninstall/binary)         | `systemctl stop` + 删除文件      | 保留 |
 
-## 删除程序 ≠ 删除数据
+## 删除程序 ≠ 删除数据 { lang="zh-CN" }
 
 DockOrae 的设计将**程序**与**数据**分离:
 
@@ -80,11 +81,13 @@ DockOrae 的设计将**程序**与**数据**分离:
 - docker run 安装:卷 `docker-manager-data`
 
 删除前建议先[备份](/guide/backup)。
+
 :::
 
-## 通用步骤
+## 通用步骤 { lang="zh-CN" }
 
 1. **备份**(可选但推荐):`sudo bash install.sh backup` 或手动打包数据目录
 2. 按安装方式执行卸载(见左侧子页面)
 3. 确认是否需要删除数据目录
-   :::
+
+::::

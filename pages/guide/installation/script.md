@@ -11,11 +11,11 @@ categories:
 top: 97000
 ---
 
-::: en
+:::: en
 
 DockOrae provides an official one-click install/management script (`install.sh`) supporting **install, update, uninstall, SSL certificates, backup/restore, password reset** and other complete features — the most hassle-free installation method on Linux.
 
-## Quick Install
+## Quick Install { lang="en" }
 
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/DockOrae/DockOrae/master/install.sh)
@@ -33,7 +33,7 @@ The script will:
 
 When the installation finishes, the panel address, default credentials, and data directory are printed.
 
-## Common Commands
+## Common Commands { lang="en" }
 
 ```bash
 sudo bash install.sh install         # Install (DM_MODE=compose|binary forces the method, DM_FORCE=1 forces a reinstall)
@@ -50,7 +50,7 @@ sudo bash install.sh reset-passwd    # Reset password to admin / 123456
 sudo bash install.sh info            # View installation info
 ```
 
-## Installation Directory Structure
+## Installation Directory Structure { lang="en" }
 
 The default installation directory is `/opt/docker-manager`:
 
@@ -64,7 +64,7 @@ The default installation directory is `/opt/docker-manager`:
 └── .install_mode           # Installation mode marker (compose / binary)
 ```
 
-## Environment Variables
+## Environment Variables { lang="en" }
 
 The script supports customizing installation parameters via environment variables:
 
@@ -92,7 +92,7 @@ Example: force binary mode installation (skips the interactive prompt)
 DM_MODE=binary bash <(curl -Ls https://raw.githubusercontent.com/DockOrae/DockOrae/master/install.sh)
 ```
 
-## Repeated-run Protection
+## Repeated-run Protection { lang="en" }
 
 When the script detects an existing installation, it shows the current version and status, and prompts:
 
@@ -106,7 +106,7 @@ docker-manager: running
 
 It will not install again and will not overwrite existing data.
 
-## Update
+## Update { lang="en" }
 
 ```bash
 sudo bash install.sh update
@@ -115,7 +115,7 @@ sudo bash install.sh update
 - Compose mode: pull the latest image and rebuild the containers
 - Binary mode: re-download the latest version and restart the systemd service
 
-## Backup and Restore
+## Backup and Restore { lang="en" }
 
 ```bash
 sudo bash install.sh backup
@@ -126,7 +126,7 @@ sudo bash install.sh restore
 
 See [Backup and Restore](/guide/backup).
 
-## Reset Password
+## Reset Password { lang="en" }
 
 Forgot your password?
 
@@ -136,7 +136,7 @@ sudo bash install.sh reset-passwd
 
 This resets the admin password to `admin / 123456` (2FA and user configuration are reset together; container/image data is unaffected).
 
-## Uninstall
+## Uninstall { lang="en" }
 
 ```bash
 sudo bash install.sh uninstall
@@ -144,7 +144,7 @@ sudo bash install.sh uninstall
 
 The script stops the services and removes the program files but **keeps the data directory**; to permanently delete the data, see [script uninstall](/guide/uninstall/script).
 
-## Domain Binding and SSL
+## Domain Binding and SSL { lang="en" }
 
 ```bash
 sudo bash install.sh ssl
@@ -161,20 +161,20 @@ Enters the SSL management menu:
 
 Before requesting a certificate, the script **verifies that the domain's A record points to this machine's public IP**; if the resolution is wrong, it aborts immediately to prevent certificate request failures. See [Domain and HTTPS](/guide/configuration/https).
 
-## FAQ
+## FAQ { lang="en" }
 
 **Getting "This script only supports Linux systems"?** The script only supports Linux; for Windows / macOS use [Docker installation](/guide/installation/docker).
 
 **Slow downloads?** On mainland China networks the script automatically uses an accelerated mirror; you can also set `DM_IMAGE` manually to use an image accelerator.
 
 **How do I check the logs if installation fails?** Compose mode: `docker compose -f /opt/docker-manager/docker-compose.yml logs`; binary mode: `journalctl -u docker-manager -n 50`.
-:::
 
-::: zh-CN
+::::
+:::: zh-CN
 
 DockOrae 官方提供一键安装/管理脚本(`install.sh`),支持**安装、更新、卸载、SSL 证书、备份恢复、密码重置**等完整功能,是 Linux 上最省心的安装方式。
 
-## 快速安装
+## 快速安装 { lang="zh-CN" }
 
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/DockOrae/DockOrae/master/install.sh)
@@ -192,7 +192,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/DockOrae/DockOrae/master/insta
 
 安装完成后输出面板地址、默认账号与数据目录。
 
-## 常用命令
+## 常用命令 { lang="zh-CN" }
 
 ```bash
 sudo bash install.sh install         # 安装(DM_MODE=compose|binary 强制方式,DM_FORCE=1 强制重装)
@@ -209,7 +209,7 @@ sudo bash install.sh reset-passwd    # 重置密码为 admin / 123456
 sudo bash install.sh info            # 查看安装信息
 ```
 
-## 安装目录结构
+## 安装目录结构 { lang="zh-CN" }
 
 默认安装目录为 `/opt/docker-manager`:
 
@@ -223,7 +223,7 @@ sudo bash install.sh info            # 查看安装信息
 └── .install_mode           # 安装方式标记(compose / binary)
 ```
 
-## 环境变量
+## 环境变量 { lang="zh-CN" }
 
 脚本支持通过环境变量定制安装参数:
 
@@ -251,7 +251,7 @@ DM_PORT=9090 DM_DATA_DIR=/data/dm bash <(curl -Ls https://raw.githubusercontent.
 DM_MODE=binary bash <(curl -Ls https://raw.githubusercontent.com/DockOrae/DockOrae/master/install.sh)
 ```
 
-## 重复执行保护
+## 重复执行保护 { lang="zh-CN" }
 
 脚本检测到已安装时会显示当前版本与状态,并提示:
 
@@ -265,7 +265,7 @@ docker-manager: running
 
 不会重复安装,也不会覆盖已有数据。
 
-## 更新
+## 更新 { lang="zh-CN" }
 
 ```bash
 sudo bash install.sh update
@@ -274,7 +274,7 @@ sudo bash install.sh update
 - Compose 方式:拉取最新镜像并重建容器
 - 二进制方式:重新下载最新版本并重启 systemd 服务
 
-## 备份与恢复
+## 备份与恢复 { lang="zh-CN" }
 
 ```bash
 sudo bash install.sh backup
@@ -285,7 +285,7 @@ sudo bash install.sh restore
 
 详见[备份与恢复](/guide/backup)。
 
-## 重置密码
+## 重置密码 { lang="zh-CN" }
 
 忘记密码时:
 
@@ -295,7 +295,7 @@ sudo bash install.sh reset-passwd
 
 将管理员密码重置为 `admin / 123456`(2FA 与用户配置一并重置,容器/镜像等数据不受影响)。
 
-## 卸载
+## 卸载 { lang="zh-CN" }
 
 ```bash
 sudo bash install.sh uninstall
@@ -303,7 +303,7 @@ sudo bash install.sh uninstall
 
 脚本会停止服务并移除程序文件,**保留数据目录**;如需彻底删除数据,见[一键脚本卸载](/guide/uninstall/script)。
 
-## 域名绑定与 SSL
+## 域名绑定与 SSL { lang="zh-CN" }
 
 ```bash
 sudo bash install.sh ssl
@@ -320,11 +320,12 @@ sudo bash install.sh ssl
 
 申请证书前脚本会**校验域名 A 记录指向本机公网 IP**,解析不对直接终止,防止证书申请失败。详见[域名与 HTTPS](/guide/configuration/https)。
 
-## 常见问题
+## 常见问题 { lang="zh-CN" }
 
 **提示 "此脚本仅支持 Linux 系统"?** 脚本只支持 Linux;Windows / macOS 请使用 [Docker 安装](/guide/installation/docker)。
 
 **下载慢?** 国内网络下脚本自动使用加速源;也可手动指定 `DM_IMAGE` 使用镜像加速。
 
 **安装失败怎么看日志?** Compose 方式: `docker compose -f /opt/docker-manager/docker-compose.yml logs`;二进制方式: `journalctl -u docker-manager -n 50`。
-:::
+
+::::

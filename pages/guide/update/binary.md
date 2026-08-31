@@ -11,11 +11,11 @@ categories:
 top: 91000
 ---
 
-::: en
+:::: en
 
 Applies to deployments where the binary is downloaded and run manually (in the foreground or managed by systemd).
 
-## systemd-Managed Mode
+## systemd-Managed Mode { lang="en" }
 
 ```bash
 wget -O dockorae.tar.gz \
@@ -33,7 +33,7 @@ sudo systemctl start docker-manager
 systemctl status docker-manager
 ```
 
-## Foreground Run Mode
+## Foreground Run Mode { lang="en" }
 
 ```bash
 # Stop the old process (Ctrl+C), then:
@@ -44,7 +44,7 @@ sudo mv docker-manager-go/docker-manager-go /usr/local/bin/
 DATA_DIR=/opt/docker-manager/data PORT=8080 docker-manager-go
 ```
 
-## Verify Integrity (Optional)
+## Verify Integrity (Optional) { lang="en" }
 
 ```bash
 wget https://github.com/DockOrae/DockOrae/releases/latest/download/docker-manager-go-linux-amd64.tar.gz.sha256
@@ -59,14 +59,15 @@ sudo bash install.sh update
 ```
 
 The script automatically downloads, verifies the SHA256 checksum, replaces the binary, and restarts the service.
-:::
-:::
 
-::: zh-CN
+:::
+::::
+
+:::: zh-CN
 
 适用于手动下载二进制运行(前台或 systemd 托管)的部署。
 
-## systemd 托管方式
+## systemd 托管方式 { lang="zh-CN" }
 
 ```bash
 wget -O dockorae.tar.gz \
@@ -84,7 +85,7 @@ sudo systemctl start docker-manager
 systemctl status docker-manager
 ```
 
-## 前台运行方式
+## 前台运行方式 { lang="zh-CN" }
 
 ```bash
 # 停止旧进程(Ctrl+C),然后:
@@ -95,7 +96,7 @@ sudo mv docker-manager-go/docker-manager-go /usr/local/bin/
 DATA_DIR=/opt/docker-manager/data PORT=8080 docker-manager-go
 ```
 
-## 校验完整性(可选)
+## 校验完整性(可选) { lang="zh-CN" }
 
 ```bash
 wget https://github.com/DockOrae/DockOrae/releases/latest/download/docker-manager-go-linux-amd64.tar.gz.sha256
@@ -110,5 +111,6 @@ sudo bash install.sh update
 ```
 
 脚本自动下载、SHA256 校验、替换二进制并重启服务。
+
 :::
-:::
+::::

@@ -11,11 +11,11 @@ categories:
 top: 91500
 ---
 
-::: en
+:::: en
 
 Applies to panels deployed via **Docker Compose** and **Docker**.
 
-## Docker Compose Mode
+## Docker Compose Mode { lang="en" }
 
 ```bash
 docker compose pull
@@ -43,7 +43,7 @@ docker compose ps              # container status: Up
 docker compose logs --tail 20  # view the panel startup logs
 ```
 
-## Docker Mode
+## Docker Mode { lang="en" }
 
 ```bash
 # 1. Pull the latest image
@@ -63,20 +63,21 @@ docker run -d --name docker-manager-go \
 
 ::: tip Keep the arguments identical
 When recreating the container, **be sure to use the same mount and port arguments as before**, otherwise the data directory or access method will change. If you are unsure, first run `docker inspect docker-manager-go` to view the original arguments.
+
 :::
 
-## After Updating
+## After Updating { lang="en" }
 
 - Open the panel; the footer version number should show the new version
 - Check that the data is intact (containers, settings, app store data)
 - Updates do not modify the data directory; no need to worry about data loss
-  :::
 
-::: zh-CN
+::::
+:::: zh-CN
 
 适用于 **Docker Compose** 与 **Docker** 两种方式部署的面板。
 
-## Docker Compose 方式
+## Docker Compose 方式 { lang="zh-CN" }
 
 ```bash
 docker compose pull
@@ -104,7 +105,7 @@ docker compose ps              # 容器状态 Up
 docker compose logs --tail 20  # 查看面板启动日志
 ```
 
-## Docker 方式
+## Docker 方式 { lang="zh-CN" }
 
 ```bash
 # 1. 拉取最新镜像
@@ -124,11 +125,13 @@ docker run -d --name docker-manager-go \
 
 ::: tip 参数保持一致
 重建容器时**务必使用与之前相同的挂载与端口参数**,否则数据目录或访问方式会改变。不确定的话,先 `docker inspect docker-manager-go` 查看原参数。
+
 :::
 
-## 更新后
+## 更新后 { lang="zh-CN" }
 
 - 打开面板,页脚版本号应为新版本
 - 检查数据是否完好(容器、设置、应用商店数据)
 - 更新不修改数据目录,无需担心数据丢失
-  :::
+
+::::

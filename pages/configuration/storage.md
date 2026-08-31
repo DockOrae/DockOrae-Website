@@ -10,9 +10,9 @@ categories:
 top: 83500
 ---
 
-::: en
+:::: en
 
-## Data Directory Structure
+## Data Directory Structure { lang="en" }
 
 Panel data is uniformly stored in the data directory (`/data` inside the container):
 
@@ -33,7 +33,7 @@ Panel data is uniformly stored in the data directory (`/data` inside the contain
 | Manual docker run          | Docker volume `docker-manager-data`                |
 | Manual binary              | `DATA_DIR` environment variable (default `./data`) |
 
-## How Data Persistence Works
+## How Data Persistence Works { lang="en" }
 
 ```
 Host storage (where the data actually lives)
@@ -50,7 +50,7 @@ SQLite / config / certificates / app store data
 - The container can be deleted, recreated, or upgraded at any time; as long as the volume or mounted directory still exists, the data is not lost
 - Before upgrading / uninstalling, confirm the data directory location and back it up or keep it
 
-## Docker Socket
+## Docker Socket { lang="en" }
 
 The panel communicates with the Docker daemon through the Docker Socket:
 
@@ -73,9 +73,10 @@ Docker Engine
 - Mount docker.sock into untrusted containers
 
 This is the common security model of the Docker ecosystem (the same as panels like Portainer); take it seriously.
+
 :::
 
-### Docker rootless
+### Docker rootless { lang="en" }
 
 The socket of rootless Docker lives in the user directory:
 
@@ -84,7 +85,7 @@ volumes:
   - /run/user/1000/docker.sock:/var/run/docker.sock
 ```
 
-## Backing Up Data
+## Backing Up Data { lang="en" }
 
 Backup = archiving the data directory:
 
@@ -101,7 +102,7 @@ docker run --rm -v docker-manager-data:/data -v $(pwd):/backup alpine \
 
 See [Backup & Restore](/guide/backup) for restore instructions and more details.
 
-## Cleaning Up Data
+## Cleaning Up Data { lang="en" }
 
 Permanently delete all data (be careful — this cannot be undone):
 
@@ -116,11 +117,10 @@ docker volume rm docker-manager-data
 rm -rf ./data
 ```
 
-:::
+::::
+:::: zh-CN
 
-::: zh-CN
-
-## 数据目录结构
+## 数据目录结构 { lang="zh-CN" }
 
 面板数据统一存放在数据目录(容器内 `/data`):
 
@@ -141,7 +141,7 @@ rm -rf ./data
 | 手动 docker run   | Docker 卷 `docker-manager-data`    |
 | 手动二进制        | `DATA_DIR` 环境变量(默认 `./data`) |
 
-## 数据持久化原理
+## 数据持久化原理 { lang="zh-CN" }
 
 ```
 宿主机存储(数据真正所在)
@@ -158,7 +158,7 @@ SQLite / 配置 / 证书 / 应用商店数据
 - 容器随时可以删除、重建、升级,只要卷或挂载目录还在,数据就不会丢
 - 升级 / 卸载前确认数据目录位置,备份或保留它
 
-## Docker Socket
+## Docker Socket { lang="zh-CN" }
 
 面板通过 Docker Socket 与 Docker daemon 通信:
 
@@ -181,9 +181,10 @@ Docker Engine
 - 将 docker.sock 挂载到不可信容器
 
 这是 Docker 生态的通用安全模型(与 Portainer 等面板相同),务必重视。
+
 :::
 
-### Docker rootless
+### Docker rootless { lang="zh-CN" }
 
 rootless Docker 的 socket 位于用户目录:
 
@@ -192,7 +193,7 @@ volumes:
   - /run/user/1000/docker.sock:/var/run/docker.sock
 ```
 
-## 备份数据
+## 备份数据 { lang="zh-CN" }
 
 备份 = 打包数据目录:
 
@@ -209,7 +210,7 @@ docker run --rm -v docker-manager-data:/data -v $(pwd):/backup alpine \
 
 恢复与更多说明见[备份与恢复](/guide/backup)。
 
-## 清理数据
+## 清理数据 { lang="zh-CN" }
 
 彻底删除所有数据(谨慎,不可恢复):
 
@@ -224,4 +225,4 @@ docker volume rm docker-manager-data
 rm -rf ./data
 ```
 
-:::
+::::

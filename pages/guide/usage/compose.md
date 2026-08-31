@@ -11,15 +11,15 @@ categories:
 top: 93500
 ---
 
-::: en
+:::: en
 
 Go to the **Compose** page to manage Docker Compose projects (stacks) directly in the panel.
 
-## Compose Project List
+## Compose Project List { lang="en" }
 
 Displays the project name, status (running / stopped), number of services, and the project directory. The panel only shows Compose projects **created or adopted by the panel** (project directories live under the panel's data directory).
 
-## Creating a Compose Stack
+## Creating a Compose Stack { lang="en" }
 
 Click **Create**, fill in the project name, paste the `docker-compose.yml` content (YAML editor with syntax highlighting), then click **Deploy**:
 
@@ -38,7 +38,7 @@ services:
       - '8081:80'
 ```
 
-## Stack Operations
+## Stack Operations { lang="en" }
 
 | Action       | Description                                                                         |
 | ------------ | ----------------------------------------------------------------------------------- |
@@ -47,7 +47,7 @@ services:
 | Delete       | `compose down` (removes containers and networks, the project configuration is kept) |
 | View details | Service status, container list, and logs                                            |
 
-## Adopting External Compose
+## Adopting External Compose { lang="en" }
 
 If you already have a project deployed with `docker compose` on the host and want to manage it in the panel:
 
@@ -57,26 +57,27 @@ If you already have a project deployed with `docker compose` on the host and wan
 
 The panel will **adopt** the project (marked as panel-managed), after which you can start, stop, and update it from the panel.
 
-::: note
+::: info
 This is the only way to bring existing host resources under panel management — the panel does not automatically discover Compose projects deployed manually on the host.
+
 :::
 
-## FAQ
+## FAQ { lang="en" }
 
 **Deployment fails with "port is already allocated"?** The port is occupied by another container. Change the port mapping, or stop the container that occupies the port first.
 
 **Compose project out of sync with host files?** The panel treats the project configuration in its data directory as authoritative; manual changes on the host are not reflected in the panel (and vice versa). Keep management on one side only.
-:::
 
-::: zh-CN
+::::
+:::: zh-CN
 
 进入 **Compose** 页面,在面板中直接管理 Docker Compose 项目(栈)。
 
-## Compose 项目列表
+## Compose 项目列表 { lang="zh-CN" }
 
 显示项目名称、状态(运行中 / 已停止)、服务数量与所在目录。面板只显示**由面板创建或接管**的 Compose 项目(项目目录在面板数据目录下)。
 
-## 创建 Compose 栈
+## 创建 Compose 栈 { lang="zh-CN" }
 
 点击 **创建**,填写项目名称并粘贴 `docker-compose.yml` 内容(YAML 编辑器,带语法高亮),点击 **部署**:
 
@@ -95,7 +96,7 @@ services:
       - '8081:80'
 ```
 
-## 栈操作
+## 栈操作 { lang="zh-CN" }
 
 | 操作     | 说明                                        |
 | -------- | ------------------------------------------- |
@@ -104,7 +105,7 @@ services:
 | 删除     | `compose down`(删除容器与网络,项目配置保留) |
 | 查看详情 | 服务状态、容器列表与日志                    |
 
-## 接管外部 Compose
+## 接管外部 Compose { lang="zh-CN" }
 
 宿主机上已有 `docker compose` 部署的项目,如果想在面板中管理:
 
@@ -114,13 +115,15 @@ services:
 
 面板会**接管**该项目(标记为面板管理),之后可在面板中启停与更新。
 
-::: note
+::: info
 这是宿主机已有资源接入面板管理的唯一方式 —— 面板不会自动发现宿主机上手动部署的 Compose 项目。
+
 :::
 
-## 常见问题
+## 常见问题 { lang="zh-CN" }
 
 **部署失败 "port is already allocated"?** 端口被其他容器占用,修改端口映射或先停止占用端口的容器。
 
 **Compose 项目与宿主机文件不同步?** 面板以它数据目录内的项目配置为准;在宿主机手动改动不会反映到面板(反之亦然),保持单侧管理。
-:::
+
+::::

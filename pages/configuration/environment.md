@@ -10,9 +10,9 @@ categories:
 top: 84500
 ---
 
-::: en
+:::: en
 
-## Command-Line Arguments
+## Command-Line Arguments { lang="en" }
 
 When running the binary, command-line arguments can be used (**they take priority over environment variables**):
 
@@ -25,9 +25,9 @@ When running the binary, command-line arguments can be used (**they take priorit
 ./dockorae -data /opt/docker-manager/data -port 9090
 ```
 
-## Environment Variables
+## Environment Variables { lang="en" }
 
-### Core Variables
+### Core Variables { lang="en" }
 
 | Variable      | Default                                 | Description                                                            |
 | ------------- | --------------------------------------- | ---------------------------------------------------------------------- |
@@ -40,27 +40,27 @@ When running the binary, command-line arguments can be used (**they take priorit
 DATA_DIR=/opt/docker-manager/data PORT=8080 docker-manager-go
 ```
 
-### App Store
+### App Store { lang="en" }
 
 | Variable           | Default                  | Description                                                |
 | ------------------ | ------------------------ | ---------------------------------------------------------- |
 | `DM_APPSTORE_REPO` | `DockOrae/DockOrae-Apps` | App store data repository (override for intranet mirrors)  |
 | `DM_APPSTORE_URL`  | —                        | App store data package download URL (offline environments) |
 
-### License
+### License { lang="en" }
 
 | Variable                | Default                                    | Description                                          |
 | ----------------------- | ------------------------------------------ | ---------------------------------------------------- |
 | `DM_LICENSE_SERVER_URL` | `https://manager.kejizero.xyz/license-api` | License Server base URL; empty string = offline mode |
 
-### Online Updates
+### Online Updates { lang="en" }
 
 | Variable         | Default             | Description                                                                                                               |
 | ---------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | `DM_DEPLOY_MODE` | Auto-detected       | Force the deployment mode: `compose` or `binary` (the panel auto-detects: inside a container = compose, otherwise binary) |
 | `DM_UPDATE_API`  | GitHub Releases API | Override for the update-check endpoint (for testing)                                                                      |
 
-## One-Click Script Environment Variables
+## One-Click Script Environment Variables { lang="en" }
 
 `install.sh` also supports install-time variables (only take effect during installation):
 
@@ -77,7 +77,7 @@ DATA_DIR=/opt/docker-manager/data PORT=8080 docker-manager-go
 
 See [One-Click Install Script](/guide/installation/script#environment-variables) for details.
 
-## Priority Rules
+## Priority Rules { lang="en" }
 
 ```
 Command-line arguments > environment variables > config file > defaults
@@ -89,12 +89,13 @@ Command-line arguments > environment variables > config file > defaults
 
 ::: warning
 `webPort` (panel setting) takes effect **after restarting the panel** once changed; the same applies to `webListen` (listen IP) and the secure entry (`webBasePath`). See [Panel Settings](/guide/configuration/panel).
-:::
-:::
 
-::: zh-CN
+:::
+::::
 
-## 命令行参数
+:::: zh-CN
+
+## 命令行参数 { lang="zh-CN" }
 
 二进制方式启动时可使用命令行参数(**优先级高于环境变量**):
 
@@ -107,9 +108,9 @@ Command-line arguments > environment variables > config file > defaults
 ./dockorae -data /opt/docker-manager/data -port 9090
 ```
 
-## 环境变量
+## 环境变量 { lang="zh-CN" }
 
-### 核心变量
+### 核心变量 { lang="zh-CN" }
 
 | 变量          | 默认值                               | 说明                                             |
 | ------------- | ------------------------------------ | ------------------------------------------------ |
@@ -122,27 +123,27 @@ Command-line arguments > environment variables > config file > defaults
 DATA_DIR=/opt/docker-manager/data PORT=8080 docker-manager-go
 ```
 
-### 应用商店
+### 应用商店 { lang="zh-CN" }
 
 | 变量               | 默认值                   | 说明                             |
 | ------------------ | ------------------------ | -------------------------------- |
 | `DM_APPSTORE_REPO` | `DockOrae/DockOrae-Apps` | 应用商店数据仓库(内网镜像时覆盖) |
 | `DM_APPSTORE_URL`  | —                        | 应用商店数据包下载地址(离线环境) |
 
-### 许可证
+### 许可证 { lang="zh-CN" }
 
 | 变量                    | 默认值                                     | 说明                                        |
 | ----------------------- | ------------------------------------------ | ------------------------------------------- |
 | `DM_LICENSE_SERVER_URL` | `https://manager.kejizero.xyz/license-api` | License Server 基础地址;空字符串 = 离线模式 |
 
-### 在线更新
+### 在线更新 { lang="zh-CN" }
 
 | 变量             | 默认值              | 说明                                                                              |
 | ---------------- | ------------------- | --------------------------------------------------------------------------------- |
 | `DM_DEPLOY_MODE` | 自动检测            | 强制指定部署方式:`compose` 或 `binary`(面板自动判断:容器内 = compose,否则 binary) |
 | `DM_UPDATE_API`  | GitHub Releases API | 更新检测接口覆盖(测试用)                                                          |
 
-## 一键脚本环境变量
+## 一键脚本环境变量 { lang="zh-CN" }
 
 `install.sh` 还支持安装期变量(仅安装时生效):
 
@@ -159,7 +160,7 @@ DATA_DIR=/opt/docker-manager/data PORT=8080 docker-manager-go
 
 详见[一键安装脚本](/guide/installation/script#环境变量)。
 
-## 优先级规则
+## 优先级规则 { lang="zh-CN" }
 
 ```
 命令行参数 > 环境变量 > 配置文件 > 默认值
@@ -171,5 +172,6 @@ DATA_DIR=/opt/docker-manager/data PORT=8080 docker-manager-go
 
 ::: warning
 `webPort`(面板设置)修改后**重启面板生效**;`webListen`(监听 IP)、安全入口(`webBasePath`)同理。见[面板设置](/guide/configuration/panel)。
+
 :::
-:::
+::::

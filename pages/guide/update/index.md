@@ -11,7 +11,7 @@ categories:
 top: 92000
 ---
 
-::: en
+:::: en
 
 DockOrae releases updates very frequently (fixes and feature iterations), so keeping the latest version is recommended. Each installation type has a corresponding update method:
 
@@ -25,9 +25,10 @@ DockOrae releases updates very frequently (fixes and feature iterations), so kee
 
 ::: tip Recommended
 **Built-in online update in the panel**: supported for every deployment method; complete it with one click in the panel without logging into the server. See [Panel Online Update](/guide/update/panel).
+
 :::
 
-## Backup Before Upgrading
+## Backup Before Upgrading { lang="en" }
 
 Backing up your data before updating is recommended (so you can roll back if the upgrade fails):
 
@@ -44,13 +45,13 @@ docker run --rm -v docker-manager-data:/data -v $(pwd):/backup alpine \
 
 See [Backup & Restore](/guide/backup) for more backup details.
 
-## Check the Current Version
+## Check the Current Version { lang="en" }
 
 - The panel footer shows the current version number
 - One-click script: `sudo bash install.sh info`
 - When a new version is available, a **pink dot indicator** appears next to the footer version number
 
-## What If the Update Fails
+## What If the Update Fails { lang="en" }
 
 1. Check the error message; it is usually a network problem (failed to pull the image / download the binary)
 2. On mainland-China networks, you can configure a [registry mirror](/guide/configuration/panel#registry-mirror) and retry
@@ -65,9 +66,9 @@ See the detailed update steps for your installation type:
 - [Binary Update](/guide/update/binary)
 - [One-Click Script Update](/guide/update/script)
 - [Panel Online Update](/guide/update/panel)
-  :::
 
-::: zh-CN
+::::
+:::: zh-CN
 
 DockOrae 更新非常频繁(修复与功能迭代),建议保持最新版本。各安装方式对应更新方法:
 
@@ -81,9 +82,10 @@ DockOrae 更新非常频繁(修复与功能迭代),建议保持最新版本。�
 
 ::: tip 推荐
 **面板内置在线更新**:任何部署方式都支持,在面板中一键完成,无需登录服务器。见[面板在线更新](/guide/update/panel)。
+
 :::
 
-## 升级前备份
+## 升级前备份 { lang="zh-CN" }
 
 更新前建议备份数据(升级失败可回滚):
 
@@ -100,13 +102,13 @@ docker run --rm -v docker-manager-data:/data -v $(pwd):/backup alpine \
 
 更多备份细节见[备份与恢复](/guide/backup)。
 
-## 查看当前版本
+## 查看当前版本 { lang="zh-CN" }
 
 - 面板页脚显示当前版本号
 - 一键脚本:`sudo bash install.sh info`
 - 有新版时页脚版本号出现**粉色圆点提示**
 
-## 更新失败怎么办
+## 更新失败怎么办 { lang="zh-CN" }
 
 1. 查看错误信息,常见为网络问题(拉取镜像 / 下载二进制失败)
 2. 国内网络可配置[镜像加速](/guide/configuration/panel#镜像加速)后重试
@@ -121,4 +123,5 @@ docker run --rm -v docker-manager-data:/data -v $(pwd):/backup alpine \
 - [二进制更新](/guide/update/binary)
 - [一键脚本更新](/guide/update/script)
 - [面板在线更新](/guide/update/panel)
-  :::
+
+::::

@@ -1,6 +1,6 @@
 ---
 title:
-  en: 生态项目
+  en: Ecosystem
   zh-CN: 生态项目
 description:
   en: DockOrae ecosystem — frontend, app store, license service and docs site.
@@ -10,11 +10,11 @@ categories:
 top: 100000
 ---
 
-::: en
+:::: en
 
 DockOrae is built from several independent repositories that work together:
 
-## Core Projects
+## Core Projects { lang="en" }
 
 | Project                    | Repository                                                                            | Description                                                                       |
 | -------------------------- | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -24,7 +24,7 @@ DockOrae is built from several independent repositories that work together:
 | **Docker_Manager_License** | [DockOrae/Docker_Manager_License](https://github.com/DockOrae/Docker_Manager_License) | License issuance service: Ed25519 signing, device binding, online verification    |
 | **DockOrae-Website**       | [DockOrae/DockOrae-Website](https://github.com/DockOrae/DockOrae-Website)             | This documentation site: VitePress, Chinese & English                             |
 
-## Relationship
+## Relationship { lang="en" }
 
 ```
 DockOrae-Frontend (frontend)
@@ -38,7 +38,7 @@ DockOrae (panel, embedded via go:embed)
 DockOrae-Website (docs) maintained separately
 ```
 
-## Development & Contribution
+## Development & Contribution { lang="en" }
 
 - Backend features → [DockOrae/DockOrae](https://github.com/DockOrae/DockOrae)
 - Frontend UI → [DockOrae/DockOrae-Frontend](https://github.com/DockOrae/DockOrae-Frontend)
@@ -46,13 +46,13 @@ DockOrae-Website (docs) maintained separately
 - Docs improvements → [DockOrae/DockOrae-Website](https://github.com/DockOrae/DockOrae-Website)
 
 See the [Contributing Guide](/development/contributing) for the workflow.
-:::
 
-::: zh-CN
+::::
+:::: zh-CN
 
 DockOrae 由多个独立仓库组成,协同工作:
 
-## 核心项目
+## 核心项目 { lang="zh-CN" }
 
 | 项目                       | 仓库                                                                                  | 说明                                                  |
 | -------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------- |
@@ -62,7 +62,7 @@ DockOrae 由多个独立仓库组成,协同工作:
 | **Docker_Manager_License** | [DockOrae/Docker_Manager_License](https://github.com/DockOrae/Docker_Manager_License) | 许可证签发服务:Ed25519 签名、设备绑定、在线验证       |
 | **DockOrae-Website**       | [DockOrae/DockOrae-Website](https://github.com/DockOrae/DockOrae-Website)             | 本文档站:VitePress 构建,中英双语                      |
 
-## 项目关系
+## 项目关系 { lang="zh-CN" }
 
 ```
 DockOrae-Frontend(前端)
@@ -76,7 +76,7 @@ DockOrae(面板,go:embed 嵌入)
 DockOrae-Website(文档站)独立维护
 ```
 
-## 开发与贡献
+## 开发与贡献 { lang="zh-CN" }
 
 - 后端功能开发 → [DockOrae/DockOrae](https://github.com/DockOrae/DockOrae)
 - 前端界面开发 → [DockOrae/DockOrae-Frontend](https://github.com/DockOrae/DockOrae-Frontend)
@@ -84,4 +84,5 @@ DockOrae-Website(文档站)独立维护
 - 文档改进 → [DockOrae/DockOrae-Website](https://github.com/DockOrae/DockOrae-Website)
 
 各仓库的贡献流程见[贡献指南](/development/contributing)。
-:::
+
+::::

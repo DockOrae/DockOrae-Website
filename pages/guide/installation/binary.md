@@ -11,11 +11,11 @@ categories:
 top: 97500
 ---
 
-::: en
+:::: en
 
 No Docker required — download the pre-built binary and run it directly. Suitable for environments without Docker, ARM devices, or advanced users.
 
-## Supported Architectures
+## Supported Architectures { lang="en" }
 
 Download the archive for your architecture from [GitHub Releases](https://github.com/DockOrae/DockOrae/releases/latest):
 
@@ -29,11 +29,12 @@ Download the archive for your architecture from [GitHub Releases](https://github
 | 386          | `docker-manager-go-linux-386.tar.gz`   | 32-bit x86                          |
 | s390x        | `docker-manager-go-linux-s390x.tar.gz` | IBM Z / LinuxONE                    |
 
-::: note
+::: info
 Each archive ships with a `.sha256` checksum file. The current Release asset names follow what is actually shown on the [Releases page](https://github.com/DockOrae/DockOrae/releases/latest).
+
 :::
 
-## Download and Run
+## Download and Run { lang="en" }
 
 Using Linux amd64 as an example:
 
@@ -62,9 +63,10 @@ Not sure about your server architecture? Run `uname -m`:
 - `x86_64` → amd64
 - `aarch64` → arm64
 - `armv7l` → armv7
-  :::
 
-## Command-line Flags
+:::
+
+## Command-line Flags { lang="en" }
 
 | Flag    | Default                 | Description    |
 | ------- | ----------------------- | -------------- |
@@ -73,7 +75,7 @@ Not sure about your server architecture? Run `uname -m`:
 
 Precedence: command-line flags > environment variables > defaults.
 
-## Managing as a systemd Service (Recommended)
+## Managing as a systemd Service (Recommended) { lang="en" }
 
 Running in the foreground occupies the terminal. We recommend managing it with systemd for auto-start on boot and automatic restart on crash:
 
@@ -115,9 +117,10 @@ DM_MODE=binary bash <(curl -Ls https://raw.githubusercontent.com/DockOrae/DockOr
 ```
 
 See the [one-click installation script](/guide/installation/script).
+
 :::
 
-## Logs
+## Logs { lang="en" }
 
 In binary mode (foreground or systemd), logs go to stdout. For systemd, view them with:
 
@@ -125,17 +128,17 @@ In binary mode (foreground or systemd), logs go to stdout. For systemd, view the
 journalctl -u docker-manager -f
 ```
 
-## Update / Stop / Uninstall
+## Update / Stop / Uninstall { lang="en" }
 
 - [Binary update](/guide/update/binary) — replace the binary and restart the service
 - [Binary uninstall](/guide/uninstall/binary) — stop the service and delete the files
-  :::
 
-::: zh-CN
+::::
+:::: zh-CN
 
 无需 Docker,直接下载编译好的二进制文件运行。适合没有 Docker 的环境、ARM 设备或高级用户。
 
-## 支持架构
+## 支持架构 { lang="zh-CN" }
 
 从 [GitHub Releases](https://github.com/DockOrae/DockOrae/releases/latest) 下载对应架构的压缩包:
 
@@ -149,11 +152,12 @@ journalctl -u docker-manager -f
 | 386   | `docker-manager-go-linux-386.tar.gz`   | 32 位 x86                |
 | s390x | `docker-manager-go-linux-s390x.tar.gz` | IBM Z / LinuxONE         |
 
-::: note
+::: info
 每个压缩包都附带 `.sha256` 校验文件。当前 Release 资产命名以 [Releases 页面](https://github.com/DockOrae/DockOrae/releases/latest) 实际显示为准。
+
 :::
 
-## 下载并运行
+## 下载并运行 { lang="zh-CN" }
 
 以 Linux amd64 为例:
 
@@ -182,9 +186,10 @@ DATA_DIR=/opt/docker-manager/data PORT=8080 docker-manager-go
 - `x86_64` → amd64
 - `aarch64` → arm64
 - `armv7l` → armv7
-  :::
 
-## 命令行参数
+:::
+
+## 命令行参数 { lang="zh-CN" }
 
 | 参数    | 默认值                  | 说明     |
 | ------- | ----------------------- | -------- |
@@ -193,7 +198,7 @@ DATA_DIR=/opt/docker-manager/data PORT=8080 docker-manager-go
 
 优先级:命令行参数 > 环境变量 > 默认值。
 
-## 托管为 systemd 服务(推荐)
+## 托管为 systemd 服务(推荐) { lang="zh-CN" }
 
 前台运行会占用终端。推荐使用 systemd 托管,开机自启、崩溃自动重启:
 
@@ -235,9 +240,10 @@ DM_MODE=binary bash <(curl -Ls https://raw.githubusercontent.com/DockOrae/DockOr
 ```
 
 见[一键安装脚本](/guide/installation/script)。
+
 :::
 
-## 日志
+## 日志 { lang="zh-CN" }
 
 二进制方式(前台或 systemd)日志输出到 stdout。systemd 方式查看:
 
@@ -245,8 +251,9 @@ DM_MODE=binary bash <(curl -Ls https://raw.githubusercontent.com/DockOrae/DockOr
 journalctl -u docker-manager -f
 ```
 
-## 更新 / 停止 / 卸载
+## 更新 / 停止 / 卸载 { lang="zh-CN" }
 
 - [二进制更新](/guide/update/binary) — 替换二进制并重启服务
 - [二进制卸载](/guide/uninstall/binary) — 停止服务并删除文件
-  :::
+
+::::

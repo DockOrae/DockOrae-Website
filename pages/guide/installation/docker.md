@@ -11,20 +11,21 @@ categories:
 top: 98500
 ---
 
-::: en
+:::: en
 
 Start DockOrae quickly with the Docker CLI. This is the simplest installation method, ideal for a quick trial.
 
-## Prerequisites
+## Prerequisites { lang="en" }
 
 - **Docker Engine** (Linux) or **Docker Desktop** (Windows / macOS) installed
 - Docker version 20.10 or later is recommended
 
-::: note
+::: info
 The panel container itself runs on Docker, while the Docker environment it manages is determined by the mounted Docker Socket — whichever daemon's socket you mount is the daemon it manages. By default the host's `/var/run/docker.sock` is mounted, so it manages the local Docker daemon.
+
 :::
 
-## Start the Container
+## Start the Container { lang="en" }
 
 ```bash
 docker run -d --name docker-manager-go \
@@ -51,7 +52,7 @@ http://<server-ip>:8080
 
 The default credentials are `admin / 123456` — please [change the password](/guide/configuration/panel) immediately after logging in.
 
-## View Container Status
+## View Container Status { lang="en" }
 
 ```bash
 docker ps
@@ -59,7 +60,7 @@ docker ps
 
 The panel container is named `docker-manager-go` and its status should be `Up`.
 
-## View Logs
+## View Logs { lang="en" }
 
 ```bash
 docker logs docker-manager-go
@@ -71,7 +72,7 @@ To follow the logs continuously:
 docker logs -f docker-manager-go
 ```
 
-## Stop / Start / Restart
+## Stop / Start / Restart { lang="en" }
 
 ```bash
 docker stop docker-manager-go
@@ -83,7 +84,7 @@ docker start docker-manager-go
 docker restart docker-manager-go
 ```
 
-## Update
+## Update { lang="en" }
 
 ```bash
 # 1. Pull the latest image
@@ -103,9 +104,10 @@ docker run -d --name docker-manager-go \
 
 ::: tip An easier way to update
 The panel has a built-in [online update](/guide/update/panel) — just click it in **Settings → Update** to finish, no need to run the commands above manually.
+
 :::
 
-## Data Persistence
+## Data Persistence { lang="en" }
 
 ```
 Host (local machine)    Container
@@ -136,9 +138,10 @@ Mounting `/var/run/docker.sock` means the container has full control over the Do
 - Restrict the source IPs allowed to reach port 8080 with a firewall
 - Set a [security entry](/guide/configuration/panel) and a [strong password](/guide/configuration/panel)
 - For public access, prefer [binding a domain with HTTPS](/guide/configuration/https)
-  :::
 
-## Uninstall
+:::
+
+## Uninstall { lang="en" }
 
 Remove the container:
 
@@ -148,22 +151,23 @@ docker rm docker-manager-go
 ```
 
 To delete the data as well, see the [uninstall documentation](/guide/uninstall/docker).
-:::
 
-::: zh-CN
+::::
+:::: zh-CN
 
 使用 Docker CLI 快速启动 DockOrae。这是最简单的安装方式,适合快速体验。
 
-## 前置条件
+## 前置条件 { lang="zh-CN" }
 
 - 已安装 **Docker Engine**(Linux)或 **Docker Desktop**(Windows / macOS)
 - Docker 版本建议 20.10 以上
 
-::: note
+::: info
 面板容器本身运行在 Docker 上,而它管理的 Docker 环境由挂载的 Docker Socket 决定 —— 即挂载哪个 daemon 的 socket,就管理哪个 daemon。默认挂载本机 `/var/run/docker.sock`,即管理本机 Docker。
+
 :::
 
-## 启动容器
+## 启动容器 { lang="zh-CN" }
 
 ```bash
 docker run -d --name docker-manager-go \
@@ -190,7 +194,7 @@ http://<服务器IP>:8080
 
 默认账号 `admin / 123456`,登录后请立即[修改密码](/guide/configuration/panel)。
 
-## 查看容器状态
+## 查看容器状态 { lang="zh-CN" }
 
 ```bash
 docker ps
@@ -198,7 +202,7 @@ docker ps
 
 面板容器名为 `docker-manager-go`,状态应为 `Up`。
 
-## 查看日志
+## 查看日志 { lang="zh-CN" }
 
 ```bash
 docker logs docker-manager-go
@@ -210,7 +214,7 @@ docker logs docker-manager-go
 docker logs -f docker-manager-go
 ```
 
-## 停止 / 启动 / 重启
+## 停止 / 启动 / 重启 { lang="zh-CN" }
 
 ```bash
 docker stop docker-manager-go
@@ -222,7 +226,7 @@ docker start docker-manager-go
 docker restart docker-manager-go
 ```
 
-## 更新
+## 更新 { lang="zh-CN" }
 
 ```bash
 # 1. 拉取最新镜像
@@ -242,9 +246,10 @@ docker run -d --name docker-manager-go \
 
 ::: tip 更简单的更新方式
 面板内置[在线更新](/guide/update/panel),在 **设置 → 更新** 一键完成,无需手动执行上述命令。
+
 :::
 
-## 数据持久化
+## 数据持久化 { lang="zh-CN" }
 
 ```
 宿主(本机)                容器内
@@ -275,9 +280,10 @@ docker volume rm docker-manager-data
 - 通过防火墙限制 8080 端口的来源 IP
 - 设置[安全入口](/guide/configuration/panel)与[强密码](/guide/configuration/panel)
 - 如需公网访问,优先[绑定域名与 HTTPS](/guide/configuration/https)
-  :::
 
-## 卸载
+:::
+
+## 卸载 { lang="zh-CN" }
 
 删除容器:
 
@@ -287,4 +293,5 @@ docker rm docker-manager-go
 ```
 
 如需同时删除数据,见[卸载文档](/guide/uninstall/docker)。
-:::
+
+::::

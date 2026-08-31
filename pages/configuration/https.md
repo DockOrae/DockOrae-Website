@@ -10,21 +10,21 @@ categories:
 top: 83000
 ---
 
-::: en
+:::: en
 
 Binding a domain to the panel and enabling HTTPS is the recommended way to access it from the public internet (no need to remember an IP and port, and traffic is encrypted).
 
-## Method 1: One-Click Script Auto-Issuance (Recommended)
+## Method 1: One-Click Script Auto-Issuance (Recommended) { lang="en" }
 
 Use the install script's SSL feature, which automatically: validates the domain DNS record → obtains a Let's Encrypt certificate via acme.sh → writes it to the panel configuration → switches to HTTPS.
 
-### Prerequisites
+### Prerequisites { lang="en" }
 
 1. The domain's A record resolves to **this machine's public IP** (the script validates this strictly and aborts immediately on a mismatch)
 2. Port **80 is free** on the server (required for acme.sh standalone validation)
 3. The firewall allows 80 / 443
 
-### Execution
+### Execution { lang="en" }
 
 ```bash
 sudo bash install.sh ssl
@@ -45,20 +45,21 @@ After it finishes, visit:
 https://<your-domain>/          # no port number needed
 ```
 
-::: note
+::: info
 
 - The issued certificate is an ECC certificate (`fullchain.cer` + `<domain>.key`) valid for 90 days; acme.sh renews it automatically
 - The renewed certificate takes effect automatically (the certificate paths were configured at install time); if it does not, run `sudo bash install.sh restart`
-  :::
 
-### Common SSL Commands
+:::
+
+### Common SSL Commands { lang="en" }
 
 ```bash
 sudo bash install.sh ssl       # SSL management menu
 sudo bash install.sh ssl renew # force renewal (menu option 3)
 ```
 
-## Method 2: Manual Certificate Configuration
+## Method 2: Manual Certificate Configuration { lang="en" }
 
 If you already have a certificate (e.g. issued by another CA), configure it manually:
 
@@ -75,9 +76,10 @@ If you already have a certificate (e.g. issued by another CA), configure it manu
 
 ::: tip Certificate file naming
 The panel only uses the paths you enter — the file names are up to you, as long as they match what you fill in. Common names are `fullchain.cer` / `example.com.key` (script-issued) or `fullchain.pem` / `privkey.pem` (standard deployments).
+
 :::
 
-## Method 3: Reverse Proxy (Optional)
+## Method 3: Reverse Proxy (Optional) { lang="en" }
 
 The panel has HTTPS built in, but if you already use a reverse proxy such as Nginx / Caddy:
 
@@ -85,11 +87,11 @@ The panel has HTTPS built in, but if you already use a reverse proxy such as Ngi
 2. Configure the reverse proxy to forward the domain to `http://127.0.0.1:8080`
 3. The reverse proxy layer handles TLS termination
 
-## Force HTTPS
+## Force HTTPS { lang="en" }
 
 In panel settings → General → Certificates, after checking **Force HTTPS**, the panel **refuses to start** when the certificate is invalid (no HTTP fallback). Make sure the certificate paths are correct before enabling it.
 
-## FAQ
+## FAQ { lang="en" }
 
 **Certificate issuance failed?** Troubleshoot by following the script's prompts: check whether the domain's A record points to this machine's public IP, whether port 80 is occupied, and whether the firewall allows 80.
 
@@ -102,23 +104,23 @@ docker exec dockorae ls -la /data/cert/    # check the certificate files inside 
 Then run `sudo bash install.sh ssl` again.
 
 **After binding a domain, direct IP access no longer works?** That's normal — the panel listen domain is a Host whitelist; once set, only that domain can access the panel (`localhost` is not restricted).
-:::
 
-::: zh-CN
+::::
+:::: zh-CN
 
 为面板绑定域名并启用 HTTPS,是公网访问的推荐方式(不用记 IP 和端口,传输加密)。
 
-## 方式一:一键脚本自动签发(推荐)
+## 方式一:一键脚本自动签发(推荐) { lang="zh-CN" }
 
 使用安装脚本的 SSL 功能,自动完成:校验域名解析 → acme.sh 申请 Let's Encrypt 证书 → 写入面板配置 → 切换 HTTPS。
 
-### 前置条件
+### 前置条件 { lang="zh-CN" }
 
 1. 域名 A 记录已解析到**本机公网 IP**(脚本会强制校验,解析错误直接终止)
 2. 服务器 **80 端口空闲**(acme.sh standalone 验证需要)
 3. 防火墙放行 80 / 443
 
-### 执行
+### 执行 { lang="zh-CN" }
 
 ```bash
 sudo bash install.sh ssl
@@ -139,20 +141,21 @@ sudo bash install.sh ssl
 https://<你的域名>/          # 无需端口号
 ```
 
-::: note
+::: info
 
 - 申请到的证书为 ECC 证书(`fullchain.cer` + `<域名>.key`),有效期 90 天,acme.sh 会自动续期
 - 续期后证书自动生效(安装时已配置证书路径);若未生效执行 `sudo bash install.sh restart`
-  :::
 
-### 常用 SSL 命令
+:::
+
+### 常用 SSL 命令 { lang="zh-CN" }
 
 ```bash
 sudo bash install.sh ssl       # SSL 管理菜单
 sudo bash install.sh ssl renew # 强制续期(菜单选项 3)
 ```
 
-## 方式二:手动配置证书
+## 方式二:手动配置证书 { lang="zh-CN" }
 
 已有证书(如从其他 CA 签发)时,手动配置:
 
@@ -169,9 +172,10 @@ sudo bash install.sh ssl renew # 强制续期(菜单选项 3)
 
 ::: tip 证书文件命名
 面板只认你填写的路径 —— 文件名随意,只要与填写一致。常见为 `fullchain.cer` / `example.com.key`(脚本签发)或 `fullchain.pem` / `privkey.pem`(标准部署)。
+
 :::
 
-## 方式三:反向代理(可选)
+## 方式三:反向代理(可选) { lang="zh-CN" }
 
 面板本身已内置 HTTPS,但如果你已有 Nginx / Caddy 等反代:
 
@@ -179,11 +183,11 @@ sudo bash install.sh ssl renew # 强制续期(菜单选项 3)
 2. 反代配置将域名转发到 `http://127.0.0.1:8080`
 3. 反代层负责 TLS 终结
 
-## 强制 HTTPS
+## 强制 HTTPS { lang="zh-CN" }
 
 面板设置 → 常规 → 证书,勾选**强制 HTTPS** 后,证书无效时面板**拒绝启动**(不降级 HTTP),请确保证书路径正确后再启用。
 
-## 常见问题
+## 常见问题 { lang="zh-CN" }
 
 **证书申请失败?** 按脚本提示排查:域名 A 记录是否指向本机公网 IP、80 端口是否被占用、防火墙是否放行 80。
 
@@ -196,4 +200,5 @@ docker exec dockorae ls -la /data/cert/    # 检查容器内证书文件
 然后重新执行 `sudo bash install.sh ssl`。
 
 **绑定域名后 IP 直访打不开了?** 正常 —— 面板监听域名是 Host 白名单,设置后仅该域名可访问(`localhost` 不受限)。
-:::
+
+::::

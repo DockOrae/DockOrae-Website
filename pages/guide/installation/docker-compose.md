@@ -11,16 +11,16 @@ categories:
 top: 98000
 ---
 
-::: en
+:::: en
 
 Docker Compose is the **preferred way to deploy on servers**: image-based, centralized configuration, and easy updates and rollbacks.
 
-## Prerequisites
+## Prerequisites { lang="en" }
 
 - **Docker Engine** and the **Compose plugin** installed (`docker compose version` can verify)
 - Works on all Linux distributions that can run Docker
 
-## Option 1: Use the Config Bundled with the Repository (Recommended)
+## Option 1: Use the Config Bundled with the Repository (Recommended) { lang="en" }
 
 The DockOrae repository ships a complete `docker-compose.yml` — download and use it directly:
 
@@ -29,7 +29,7 @@ mkdir -p /opt/docker-manager && cd /opt/docker-manager
 curl -fsSL https://raw.githubusercontent.com/DockOrae/DockOrae/master/docker-compose.yml -o docker-compose.yml
 ```
 
-## Option 2: Create It Manually
+## Option 2: Create It Manually { lang="en" }
 
 Create `docker-compose.yml` (full configuration, adjust as needed):
 
@@ -77,7 +77,7 @@ services:
 
 > Other optional settings (privileged mode, resource limits, health checks, custom networks, etc.) are documented in the comments of the repository's `docker-compose.yml`.
 
-## Start
+## Start { lang="en" }
 
 ```bash
 docker compose up -d
@@ -88,13 +88,13 @@ docker compose up -d
 
 The image is pulled automatically on first start. After starting, visit `http://<server-ip>:8080`; the default credentials are `admin / 123456`.
 
-## Check Status
+## Check Status { lang="en" }
 
 ```bash
 docker compose ps
 ```
 
-## View Logs
+## View Logs { lang="en" }
 
 ```bash
 docker compose logs -f
@@ -103,7 +103,7 @@ docker compose logs -f
 - `logs` — Output container logs
 - `-f` — Follow continuously (press `Ctrl+C` to exit)
 
-## Stop / Start / Restart
+## Stop / Start / Restart { lang="en" }
 
 ```bash
 docker compose stop
@@ -122,9 +122,10 @@ docker compose down
 
 - `docker compose stop` — only stops containers, keeps containers and networks; `start` can resume
 - `docker compose down` — removes containers and networks, **does not delete** the `./data` data directory
-  :::
 
-## Update
+:::
+
+## Update { lang="en" }
 
 ```bash
 # Pull the latest image and rebuild the containers
@@ -143,9 +144,10 @@ docker compose up -d --pull always
 
 ::: tip
 The panel has built-in [online update](/guide/update/panel) — complete it with one click in the panel, no need to log into the server.
+
 :::
 
-## Data Persistence
+## Data Persistence { lang="en" }
 
 ```
 Host                              Container
@@ -169,7 +171,7 @@ rm -rf /opt/docker-manager/data
 
 For more backup methods, see [Backup and Restore](/guide/backup).
 
-## FAQ
+## FAQ { lang="en" }
 
 **Compose fails to start?** Check the logs to find the cause:
 
@@ -179,7 +181,7 @@ docker compose logs --tail 50
 
 **Remote Docker host?** Set `DOCKER_HOST=tcp://<host>:2375` in `environment` and comment out the docker.sock mount.
 
-## Uninstall
+## Uninstall { lang="en" }
 
 ```bash
 docker compose down          # Stop and remove containers
@@ -187,18 +189,18 @@ rm -rf /opt/docker-manager   # Delete the compose file and data directory (be ca
 ```
 
 See the [uninstall documentation](/guide/uninstall/docker).
-:::
 
-::: zh-CN
+::::
+:::: zh-CN
 
 Docker Compose 是**服务器部署的首选方式**:基于镜像、配置集中、更新与回滚方便。
 
-## 前置条件
+## 前置条件 { lang="zh-CN" }
 
 - 已安装 **Docker Engine** 与 **Compose 插件**(`docker compose version` 可验证)
 - 支持所有运行 Docker 的 Linux 发行版
 
-## 方式一:使用仓库自带配置(推荐)
+## 方式一:使用仓库自带配置(推荐) { lang="zh-CN" }
 
 DockOrae 仓库内置了完整的 `docker-compose.yml`,直接下载使用:
 
@@ -207,7 +209,7 @@ mkdir -p /opt/docker-manager && cd /opt/docker-manager
 curl -fsSL https://raw.githubusercontent.com/DockOrae/DockOrae/master/docker-compose.yml -o docker-compose.yml
 ```
 
-## 方式二:手动创建
+## 方式二:手动创建 { lang="zh-CN" }
 
 创建 `docker-compose.yml`(完整配置,按需调整):
 
@@ -255,7 +257,7 @@ services:
 
 > 其他可选配置(特权模式、资源限制、健康检查、自定义网络等)见仓库 `docker-compose.yml` 中的注释说明。
 
-## 启动
+## 启动 { lang="zh-CN" }
 
 ```bash
 docker compose up -d
@@ -266,13 +268,13 @@ docker compose up -d
 
 首次启动会自动拉取镜像。启动后访问 `http://<服务器IP>:8080`,默认账号 `admin / 123456`。
 
-## 查看状态
+## 查看状态 { lang="zh-CN" }
 
 ```bash
 docker compose ps
 ```
 
-## 查看日志
+## 查看日志 { lang="zh-CN" }
 
 ```bash
 docker compose logs -f
@@ -281,7 +283,7 @@ docker compose logs -f
 - `logs` — 输出容器日志
 - `-f` — 持续跟踪(按 `Ctrl+C` 退出)
 
-## 停止 / 启动 / 重启
+## 停止 / 启动 / 重启 { lang="zh-CN" }
 
 ```bash
 docker compose stop
@@ -300,9 +302,10 @@ docker compose down
 
 - `docker compose stop` — 仅停止容器,保留容器与网络,`start` 可恢复
 - `docker compose down` — 删除容器与网络,**不会删除** `./data` 数据目录
-  :::
 
-## 更新
+:::
+
+## 更新 { lang="zh-CN" }
 
 ```bash
 # 拉取最新镜像并重建容器
@@ -321,9 +324,10 @@ docker compose up -d --pull always
 
 ::: tip
 面板内置[在线更新](/guide/update/panel),在面板中一键完成,无需登录服务器。
+
 :::
 
-## 数据持久化
+## 数据持久化 { lang="zh-CN" }
 
 ```
 宿主机                         容器内
@@ -347,7 +351,7 @@ rm -rf /opt/docker-manager/data
 
 更多备份方法见[备份与恢复](/guide/backup)。
 
-## 常见问题
+## 常见问题 { lang="zh-CN" }
 
 **Compose 启动失败?** 查看日志定位原因:
 
@@ -357,7 +361,7 @@ docker compose logs --tail 50
 
 **远程 Docker 主机?** 在 `environment` 中设置 `DOCKER_HOST=tcp://<host>:2375`,并注释掉 docker.sock 挂载。
 
-## 卸载
+## 卸载 { lang="zh-CN" }
 
 ```bash
 docker compose down          # 停止并删除容器
@@ -365,4 +369,5 @@ rm -rf /opt/docker-manager   # 删除 compose 文件与数据目录(谨慎!)
 ```
 
 详见[卸载文档](/guide/uninstall/docker)。
-:::
+
+::::

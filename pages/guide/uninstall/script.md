@@ -11,7 +11,7 @@ categories:
 top: 87500
 ---
 
-::: en
+:::: en
 
 For panels installed with the one-click script, uninstalling takes a single command:
 
@@ -26,12 +26,12 @@ The script will:
 3. Binary method: stop and disable the systemd service, remove the service file and the `/usr/local/bin/dockorae` symlink
 4. Ask whether to also delete the installation directory (**data is still kept**)
 
-## After uninstalling
+## After uninstalling { lang="en" }
 
 - The panel is stopped and the data remains in `/opt/docker-manager/data`
 - To reinstall, run `bash <(curl -Ls https://raw.githubusercontent.com/DockOrae/DockOrae/master/install.sh)` and your data will be restored automatically
 
-## Deleting data permanently
+## Deleting data permanently { lang="en" }
 
 ::: danger Irrecoverable
 
@@ -44,7 +44,7 @@ sudo rm -rf /opt/docker-manager
 
 :::
 
-## Reinstalling
+## Reinstalling { lang="en" }
 
 ```bash
 # Reinstall while keeping the data
@@ -54,9 +54,8 @@ bash <(curl -Ls https://raw.githubusercontent.com/DockOrae/DockOrae/master/insta
 DM_FORCE=1 sudo bash install.sh install
 ```
 
-:::
-
-::: zh-CN
+::::
+:::: zh-CN
 
 由一键脚本安装的面板,卸载一条命令:
 
@@ -71,12 +70,12 @@ sudo bash install.sh uninstall
 3. 二进制方式:停止并禁用 systemd 服务、删除服务文件与 `/usr/local/bin/dockorae` 链接
 4. 询问是否同时删除安装目录(**数据仍然保留**)
 
-## 卸载后
+## 卸载后 { lang="zh-CN" }
 
 - 面板已停止,数据仍在 `/opt/docker-manager/data`
 - 重新安装时执行 `bash <(curl -Ls https://raw.githubusercontent.com/DockOrae/DockOrae/master/install.sh)`,数据自动恢复
 
-## 彻底删除数据
+## 彻底删除数据 { lang="zh-CN" }
 
 ::: danger 不可恢复
 
@@ -89,7 +88,7 @@ sudo rm -rf /opt/docker-manager
 
 :::
 
-## 重新安装
+## 重新安装 { lang="zh-CN" }
 
 ```bash
 # 保留数据重装
@@ -99,4 +98,4 @@ bash <(curl -Ls https://raw.githubusercontent.com/DockOrae/DockOrae/master/insta
 DM_FORCE=1 sudo bash install.sh install
 ```
 
-:::
+::::

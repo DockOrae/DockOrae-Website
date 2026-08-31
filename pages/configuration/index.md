@@ -10,7 +10,7 @@ categories:
 top: 85000
 ---
 
-::: en
+:::: en
 
 DockOrae's configuration system consists of four layers, in descending order of priority:
 
@@ -24,7 +24,7 @@ Config file (inside the data directory)
 Built-in defaults
 ```
 
-## Configuration Storage Location
+## Configuration Storage Location { lang="en" }
 
 All panel configuration and data are stored in the **data directory** (`/data` inside the container by default, configurable via `DATA_DIR`):
 
@@ -38,9 +38,10 @@ All panel configuration and data are stored in the **data directory** (`/data` i
 
 ::: tip The correct way to modify panel settings
 Panel settings (in SQLite) can only be changed via the **panel UI (Settings → General / Security / …)** or the **API (`PUT /api/system/settings`)**. Editing `settings.json` directly has no effect — it is only a migration source from older versions.
+
 :::
 
-## Quick Reference: Common Configuration Entries
+## Quick Reference: Common Configuration Entries { lang="en" }
 
 | What you want to configure                                       | Entry                                                                         |
 | ---------------------------------------------------------------- | ----------------------------------------------------------------------------- |
@@ -49,7 +50,7 @@ Panel settings (in SQLite) can only be changed via the **panel UI (Settings → 
 | Data persistence / Docker Socket                                 | [Data Directory & Persistence](/guide/configuration/storage)                  |
 | HTTPS domain binding                                             | [Domain & HTTPS](/guide/configuration/https)                                  |
 
-## Default Values at a Glance
+## Default Values at a Glance { lang="en" }
 
 | Item             | Default                                 | Description                                                                             |
 | ---------------- | --------------------------------------- | --------------------------------------------------------------------------------------- |
@@ -61,9 +62,8 @@ Panel settings (in SQLite) can only be changed via the **panel UI (Settings → 
 | Session duration | 7 days                                  | Modifiable in panel settings                                                            |
 | Timezone         | `Asia/Shanghai`                         | Panel settings → Date and Time                                                          |
 
-:::
-
-::: zh-CN
+::::
+:::: zh-CN
 
 DockOrae 的配置体系由四层组成,优先级从高到低:
 
@@ -77,7 +77,7 @@ DockOrae 的配置体系由四层组成,优先级从高到低:
 内置默认值
 ```
 
-## 配置存储位置
+## 配置存储位置 { lang="zh-CN" }
 
 面板的所有配置与数据都保存在**数据目录**(默认容器内 `/data`,可通过 `DATA_DIR` 修改):
 
@@ -91,9 +91,10 @@ DockOrae 的配置体系由四层组成,优先级从高到低:
 
 ::: tip 修改面板设置的正确方式
 面板设置(SQLite 中)只能通过 **面板 UI(设置 → 常规 / 安全 / …)** 或 **API(`PUT /api/system/settings`)** 修改。直接编辑 `settings.json` 无效 —— 它只是旧版迁移源。
+
 :::
 
-## 常用配置入口速查
+## 常用配置入口速查 { lang="zh-CN" }
 
 | 想配置什么                              | 入口                                                   |
 | --------------------------------------- | ------------------------------------------------------ |
@@ -102,7 +103,7 @@ DockOrae 的配置体系由四层组成,优先级从高到低:
 | 数据持久化 / Docker Socket              | [数据目录与持久化](/guide/configuration/storage)       |
 | HTTPS 域名绑定                          | [域名与 HTTPS](/guide/configuration/https)             |
 
-## 默认值一览
+## 默认值一览 { lang="zh-CN" }
 
 | 配置项      | 默认值                          | 说明                                               |
 | ----------- | ------------------------------- | -------------------------------------------------- |
@@ -114,4 +115,4 @@ DockOrae 的配置体系由四层组成,优先级从高到低:
 | 会话时长    | 7 天                            | 面板设置中可修改                                   |
 | 时区        | `Asia/Shanghai`                 | 面板设置 → 日期和时间                              |
 
-:::
+::::

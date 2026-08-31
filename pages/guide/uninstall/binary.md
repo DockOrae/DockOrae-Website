@@ -11,11 +11,11 @@ categories:
 top: 88000
 ---
 
-::: en
+:::: en
 
 Applies to panels deployed manually from a binary (managed by systemd or run in the foreground).
 
-## systemd-managed method
+## systemd-managed method { lang="en" }
 
 ```bash
 sudo systemctl stop docker-manager
@@ -29,7 +29,7 @@ sudo systemctl daemon-reload
 sudo rm -f /usr/local/bin/docker-manager-go
 ```
 
-## Foreground-run method
+## Foreground-run method { lang="en" }
 
 Stop the process directly (Ctrl+C) and delete the binary:
 
@@ -37,7 +37,7 @@ Stop the process directly (Ctrl+C) and delete the binary:
 sudo rm -f /usr/local/bin/docker-manager-go
 ```
 
-## Deleting data permanently
+## Deleting data permanently { lang="en" }
 
 ::: danger Irrecoverable
 The data directory defaults to `/opt/docker-manager/data` (or the location you set via `DATA_DIR`). Only delete after confirming you have a backup:
@@ -48,7 +48,7 @@ sudo rm -rf /opt/docker-manager/data
 
 :::
 
-## Full uninstall example
+## Full uninstall example { lang="en" }
 
 ```bash
 sudo systemctl stop docker-manager
@@ -59,13 +59,12 @@ sudo rm -f /usr/local/bin/docker-manager-go
 sudo rm -rf /opt/docker-manager   # Program directory + data (be careful)
 ```
 
-:::
-
-::: zh-CN
+::::
+:::: zh-CN
 
 适用于手动二进制(systemd 托管或前台运行)部署的面板。
 
-## systemd 托管方式
+## systemd 托管方式 { lang="zh-CN" }
 
 ```bash
 sudo systemctl stop docker-manager
@@ -79,7 +78,7 @@ sudo systemctl daemon-reload
 sudo rm -f /usr/local/bin/docker-manager-go
 ```
 
-## 前台运行方式
+## 前台运行方式 { lang="zh-CN" }
 
 直接停止进程(Ctrl+C)并删除二进制:
 
@@ -87,7 +86,7 @@ sudo rm -f /usr/local/bin/docker-manager-go
 sudo rm -f /usr/local/bin/docker-manager-go
 ```
 
-## 彻底删除数据
+## 彻底删除数据 { lang="zh-CN" }
 
 ::: danger 不可恢复
 数据目录默认 `/opt/docker-manager/data`(或你通过 `DATA_DIR` 指定的位置)。确认已备份后再删除:
@@ -98,7 +97,7 @@ sudo rm -rf /opt/docker-manager/data
 
 :::
 
-## 完整卸载示例
+## 完整卸载示例 { lang="zh-CN" }
 
 ```bash
 sudo systemctl stop docker-manager
@@ -109,4 +108,4 @@ sudo rm -f /usr/local/bin/docker-manager-go
 sudo rm -rf /opt/docker-manager   # 程序目录 + 数据(谨慎)
 ```
 
-:::
+::::

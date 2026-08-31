@@ -10,19 +10,20 @@ categories:
 top: 84000
 ---
 
-::: en
+:::: en
 
 Open **Panel Settings**, which includes the submenus: **General / Security / Telegram / Email / License / About**.
 
-::: note Effect rules
+::: info Effect rules
 
 - **Take effect immediately**: panel listen domain, unauthenticated settings, session duration, IP whitelist, registry mirror
 - **Panel restart required**: panel listen IP, listen port, secure entry, certificate paths
-  :::
 
-## General
+:::
 
-### Basic
+## General { lang="en" }
+
+### Basic { lang="en" }
 
 | Item                     | Description                                                                                                                                             |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -34,7 +35,7 @@ Open **Panel Settings**, which includes the submenus: **General / Security / Tel
 | Session duration         | Login session validity in minutes; default 10080 (7 days)                                                                                               |
 | IP restriction whitelist | CIDR / single IP; IPs in the whitelist are not affected by failed-login counting or bans                                                                |
 
-### Registry Mirror
+### Registry Mirror { lang="en" }
 
 Enter mirror source addresses (multiple allowed, comma-separated); after saving, they are automatically written to the host's `daemon.json` and the Docker service is restarted.
 
@@ -42,9 +43,10 @@ Common mirrors (China): `https://docker.1panel.live`, `https://dockerpull.org`
 
 ::: warning
 Changing the registry mirror restarts the host's Docker service; running containers will be briefly interrupted.
+
 :::
 
-## Certificates
+## Certificates { lang="en" }
 
 | Item                                   | Description                                                  |
 | -------------------------------------- | ------------------------------------------------------------ |
@@ -55,15 +57,15 @@ Changing the registry mirror restarts the host's Docker service; running contain
 - When the certificate is invalid, it automatically falls back to HTTP (to avoid losing access); the panel will not refuse to start
 - It is recommended to use the one-click script to automatically issue certificates: [Domain & HTTPS](/guide/configuration/https)
 
-## Date and Time
+## Date and Time { lang="en" }
 
 - **Timezone** — default `Asia/Shanghai`
 - **NTP server** — default `pool.ntp.org` (panel clock calibration; license validation depends on trusted time)
 - **Date picker type** — calendar display style
 
-## Security
+## Security { lang="en" }
 
-### Admin Credentials
+### Admin Credentials { lang="en" }
 
 A four-field form:
 
@@ -74,7 +76,7 @@ A four-field form:
 | New username      | Leave empty = no change             |
 | New password      | Leave empty = no change             |
 
-### Two-Factor Authentication (TOTP)
+### Two-Factor Authentication (TOTP) { lang="en" }
 
 1. Click **Enable** and enter the current password
 2. Use an authenticator app (Google Authenticator, etc.) to scan the QR code or manually enter the key
@@ -82,12 +84,12 @@ A four-field form:
 
 Once enabled, login requires entering the password and then the dynamic code. Disabling requires the password + dynamic code.
 
-### Password Policy
+### Password Policy { lang="en" }
 
 - **Password expiration** — after setting an expiration period in days, login forces a password change when it expires (0 = never expires)
 - **Password complexity** — 8-64 characters, must include uppercase and lowercase letters and digits
 
-## Telegram Notifications
+## Telegram Notifications { lang="en" }
 
 After configuring a Telegram bot, panel events (failed logins, license status, container/image/network/volume changes) are pushed in real time to the specified chat:
 
@@ -100,7 +102,7 @@ After configuring a Telegram bot, panel events (failed logins, license status, c
 | Bot language        | Notification message language (defaults to the panel's language)                                                  |
 | Custom API server   | Fill in when using a self-hosted Telegram API gateway                                                             |
 
-## Email Notifications
+## Email Notifications { lang="en" }
 
 After configuring SMTP, event notifications are sent via email:
 
@@ -112,7 +114,7 @@ After configuring SMTP, event notifications are sent via email:
 | Recipients         | Comma-separated; leave empty = send to the sender |
 | Encryption         | `none` / `ssl` / `starttls`                       |
 
-## License
+## License { lang="en" }
 
 DockOrae's Pro features (creating containers, Compose deployments, app store installs) are gated by a license:
 
@@ -120,18 +122,19 @@ DockOrae's Pro features (creating containers, Compose deployments, app store ins
 - After activation, the status badge shows the online verification status
 - The **Verify Now** button syncs the revocation status immediately (otherwise it takes effect within up to 24h)
 
-::: note License notes
+::: info License notes
 
 - Uses the official License Server (`https://manager.kejizero.xyz/license-api`) by default; no configuration needed
 - Self-hosted License Server: deploy [Docker_Manager_License](https://github.com/DockOrae/Docker_Manager_License) and set `DM_LICENSE_SERVER_URL`
 - Existing users keep the offline activation method
-  :::
 
-## About
+:::
+
+## About { lang="en" }
 
 Version info, project address, and documentation links.
 
-## Toolbox
+## Toolbox { lang="en" }
 
 The panel settings also include an operations toolbox:
 
@@ -141,22 +144,24 @@ The panel settings also include an operations toolbox:
 
 ::: warning Restart Docker (privileged)
 The "Restart Docker" option in the toolbox requires privileged mode (enable `privileged: true` for Compose deployments); it is disabled by default.
-:::
-:::
 
-::: zh-CN
+:::
+::::
+
+:::: zh-CN
 
 进入 **面板设置**,包含子菜单:**常规 / 安全 / Telegram / 邮件 / 许可证 / 关于**。
 
-::: note 生效规则
+::: info 生效规则
 
 - **即时生效**:面板监听域名、未认证设置、会话时长、IP 白名单、镜像加速
 - **需重启面板**:面板监听 IP、监听端口、安全入口、证书路径
-  :::
 
-## 常规
+:::
 
-### 基础
+## 常规 { lang="zh-CN" }
+
+### 基础 { lang="zh-CN" }
 
 | 配置项        | 说明                                                                                                     |
 | ------------- | -------------------------------------------------------------------------------------------------------- |
@@ -168,7 +173,7 @@ The "Restart Docker" option in the toolbox requires privileged mode (enable `pri
 | 会话时长      | 登录会话有效期(分钟),默认 10080(7 天)                                                                    |
 | IP 限制白名单 | CIDR / 单个 IP;白名单内 IP 不受登录失败计数与封禁影响                                                    |
 
-### 镜像加速
+### 镜像加速 { lang="zh-CN" }
 
 填写加速源地址(可多个,逗号分隔),保存后自动写入宿主机 `daemon.json` 并重启 Docker 服务。
 
@@ -176,9 +181,10 @@ The "Restart Docker" option in the toolbox requires privileged mode (enable `pri
 
 ::: warning
 修改镜像加速会重启宿主机 Docker 服务,正在运行的容器会短暂中断。
+
 :::
 
-## 证书
+## 证书 { lang="zh-CN" }
 
 | 配置项               | 说明                                       |
 | -------------------- | ------------------------------------------ |
@@ -189,15 +195,15 @@ The "Restart Docker" option in the toolbox requires privileged mode (enable `pri
 - 证书无效时自动降级 HTTP(防失联),不会拒绝启动
 - 推荐用一键脚本自动签发证书:[域名与 HTTPS](/guide/configuration/https)
 
-## 日期和时间
+## 日期和时间 { lang="zh-CN" }
 
 - **时区** — 默认 `Asia/Shanghai`
 - **NTP 服务器** — 默认 `pool.ntp.org`(面板时钟校准,许可证校验依赖可信时间)
 - **日期选择器类型** — 日历显示风格
 
-## 安全
+## 安全 { lang="zh-CN" }
 
-### 管理员凭证
+### 管理员凭证 { lang="zh-CN" }
 
 四字段表单:
 
@@ -208,7 +214,7 @@ The "Restart Docker" option in the toolbox requires privileged mode (enable `pri
 | 新用户名 | 留空 = 不修改 |
 | 新密码   | 留空 = 不修改 |
 
-### 双因素认证(TOTP)
+### 双因素认证(TOTP) { lang="zh-CN" }
 
 1. 点击 **启用**,输入当前密码
 2. 用认证器 App(Google Authenticator 等)扫描二维码或手动输入密钥
@@ -216,12 +222,12 @@ The "Restart Docker" option in the toolbox requires privileged mode (enable `pri
 
 启用后登录需依次输入密码与动态码。禁用需密码 + 动态码。
 
-### 密码策略
+### 密码策略 { lang="zh-CN" }
 
 - **密码过期** — 设置过期天数后,到期登录强制修改密码(0 = 不过期)
 - **密码复杂度** — 8-64 位,需包含大小写字母和数字
 
-## Telegram 通知
+## Telegram 通知 { lang="zh-CN" }
 
 配置 Telegram 机器人后,面板事件(登录失败、许可证状态、容器/镜像/网络/卷变更)实时推送到指定会话:
 
@@ -234,7 +240,7 @@ The "Restart Docker" option in the toolbox requires privileged mode (enable `pri
 | Bot 语言          | 通知文案语言(默认跟随面板)                                             |
 | 自定义 API 服务器 | 使用自建 Telegram API 网关时填写                                       |
 
-## 邮件通知
+## 邮件通知 { lang="zh-CN" }
 
 配置 SMTP 后,事件通知通过邮件发送:
 
@@ -246,7 +252,7 @@ The "Restart Docker" option in the toolbox requires privileged mode (enable `pri
 | 收件人             | 逗号分隔;留空 = 发给发件人自己 |
 | 加密方式           | `none` / `ssl` / `starttls`    |
 
-## 许可证
+## 许可证 { lang="zh-CN" }
 
 DockOrae 的 Pro 功能(创建容器、Compose 部署、应用商店安装)由许可证门控:
 
@@ -254,18 +260,19 @@ DockOrae 的 Pro 功能(创建容器、Compose 部署、应用商店安装)由�
 - 激活后状态徽标显示在线验证状态
 - **立即验证** 按钮可即时同步吊销状态(否则最长 24h 生效)
 
-::: note 许可证说明
+::: info 许可证说明
 
 - 默认使用官方 License Server(`https://manager.kejizero.xyz/license-api`),无需配置
 - 自建 License Server:部署 [Docker_Manager_License](https://github.com/DockOrae/Docker_Manager_License) 并设置 `DM_LICENSE_SERVER_URL`
 - 存量用户保留离线激活方式
-  :::
 
-## 关于
+:::
+
+## 关于 { lang="zh-CN" }
 
 版本信息、项目地址与文档链接。
 
-## 工具箱
+## 工具箱 { lang="zh-CN" }
 
 面板设置中还提供运维工具箱:
 
@@ -275,5 +282,6 @@ DockOrae 的 Pro 功能(创建容器、Compose 部署、应用商店安装)由�
 
 ::: warning 重启 Docker(特权)
 工具箱中的「重启 Docker」需要特权模式(Compose 部署时启用 `privileged: true`),默认关闭。
+
 :::
-:::
+::::

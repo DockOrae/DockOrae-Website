@@ -10,11 +10,11 @@ categories:
 top: 100000
 ---
 
-::: en
+:::: en
 
 This page takes you from zero to running: learn what DockOrae is → choose an installation method → complete your first launch.
 
-## What is DockOrae
+## What is DockOrae { lang="en" }
 
 **DockOrae** is a modern Docker management panel written in **Go** ([gin](https://github.com/gin-gonic/gin) + the official [Moby Docker SDK](https://github.com/moby/moby)), with a frontend built on **Vue 3**. It interacts with the Docker API through the Docker Socket and provides full Docker management capabilities in the browser:
 
@@ -29,9 +29,10 @@ This page takes you from zero to running: learn what DockOrae is → choose an i
 
 ::: warning Scope of use
 DockOrae is for personal use only. Do not use it for illegal purposes, or in production environments without proper authorization.
+
 :::
 
-## Installation
+## Installation { lang="en" }
 
 DockOrae supports four installation methods, in the recommended order:
 
@@ -50,9 +51,9 @@ bash <(curl -Ls https://raw.githubusercontent.com/DockOrae/DockOrae/master/insta
 
 The script detects the network environment (automatically uses an accelerated mirror in mainland China), installs Docker if missing, and guides you through choosing an installation method.
 
-## First Launch
+## First Launch { lang="en" }
 
-### 1. Open the Panel
+### 1. Open the Panel { lang="en" }
 
 After installation, visit in your browser:
 
@@ -62,7 +63,7 @@ http://<server-ip>:8080
 
 > The port can be changed via the `DM_PORT` environment variable during installation, or adjusted later in [panel settings](/guide/configuration/panel).
 
-### 2. Log In
+### 2. Log In { lang="en" }
 
 Default credentials:
 
@@ -72,15 +73,16 @@ Default credentials:
 
 ::: danger Change the default password immediately after first login
 Go to **Settings → Security → Admin credentials** to change the password. A default password means anyone can log in to your panel.
+
 :::
 
-### 3. Get to Know the Interface
+### 3. Get to Know the Interface { lang="en" }
 
 - **Dashboard** (system status page) — real-time charts for CPU / memory / network throughput / disk I/O, plus counts of containers, images and volumes at a glance
 - **Left sidebar navigation** — containers / images / networks / volumes / Compose / app store / panel settings
 - **Footer version number** — shows the current version; a pink dot appears when an update is available, click it to [update online](/guide/update/panel)
 
-### 4. (Optional) Basic Configuration
+### 4. (Optional) Basic Configuration { lang="en" }
 
 After logging in, complete the following as needed:
 
@@ -89,24 +91,24 @@ After logging in, complete the following as needed:
 - [Bind a domain and HTTPS](/guide/configuration/https) — `sudo bash install.sh ssl` issues a certificate in one step
 - [Configure an image accelerator](/guide/configuration/panel#registry-mirror) — faster image pulls in mainland China
 
-### 5. Install Your First App
+### 5. Install Your First App { lang="en" }
 
 Open the **App Store**, pick an app (such as Nginx or MySQL), choose a version, fill in the parameters and click Install. On first launch the panel automatically syncs the app store data in the background, so no manual steps are needed.
 
-## Next Steps
+## Next Steps { lang="en" }
 
 - [Installation methods in detail](/guide/installation/) — choose the deployment method that suits you best
 - [Container management](/guide/usage/containers) — create and manage your first container
 - [Compose management](/guide/usage/compose) — orchestrate multi-container apps with YAML
 - [Configuration in detail](/guide/configuration/) — environment variables, panel settings, data directory
 - [FAQ](/faq) — check here first when you run into problems during installation or usage
-  :::
 
-::: zh-CN
+::::
+:::: zh-CN
 
 本页带你从零开始:了解 DockOrae 是什么 → 选择安装方式 → 完成第一次启动。
 
-## DockOrae 是什么
+## DockOrae 是什么 { lang="zh-CN" }
 
 **DockOrae** 是一款使用 **Go** 语言编写的现代化 Docker 管理面板([gin](https://github.com/gin-gonic/gin) + 官方 [Moby Docker SDK](https://github.com/moby/moby)),前端采用 **Vue 3**。它通过 Docker Socket 与 Docker API 交互,在浏览器中提供完整的 Docker 管理能力:
 
@@ -121,9 +123,10 @@ Open the **App Store**, pick an app (such as Nginx or MySQL), choose a version, 
 
 ::: warning 使用范围
 DockOrae 仅限个人使用。请勿将其用于非法用途,或在未经适当授权的情况下用于生产环境。
+
 :::
 
-## 安装
+## 安装 { lang="zh-CN" }
 
 DockOrae 支持四种安装方式,推荐顺序如下:
 
@@ -142,9 +145,9 @@ bash <(curl -Ls https://raw.githubusercontent.com/DockOrae/DockOrae/master/insta
 
 脚本会检测网络环境(国内自动使用加速源)、自动安装 Docker(如缺失),并引导你选择安装方式。
 
-## 第一次启动
+## 第一次启动 { lang="zh-CN" }
 
-### 1. 打开面板
+### 1. 打开面板 { lang="zh-CN" }
 
 安装完成后,浏览器访问:
 
@@ -154,7 +157,7 @@ http://<服务器IP>:8080
 
 > 端口可在安装时通过 `DM_PORT` 环境变量修改,或在安装后于 [面板设置](/guide/configuration/panel) 中调整。
 
-### 2. 登录
+### 2. 登录 { lang="zh-CN" }
 
 默认账号:
 
@@ -164,15 +167,16 @@ http://<服务器IP>:8080
 
 ::: danger 首次登录请立即修改默认密码
 前往 **设置 → 安全 → 管理员凭证** 修改密码。默认密码意味着任何人都可以登录你的面板。
+
 :::
 
-### 3. 认识界面
+### 3. 认识界面 { lang="zh-CN" }
 
 - **仪表盘**(系统状态页)— CPU / 内存 / 网络吞吐 / 磁盘 I/O 实时曲线,容器、镜像、存储卷数量一览
 - **左侧导航** — 容器 / 镜像 / 网络 / 存储卷 / Compose / 应用商店 / 面板设置
 - **页脚版本号** — 显示当前版本;有新版本时出现粉色圆点提示,点击即可[在线更新](/guide/update/panel)
 
-### 4. (可选)基础配置
+### 4. (可选)基础配置 { lang="zh-CN" }
 
 登录后建议按需完成:
 
@@ -181,15 +185,16 @@ http://<服务器IP>:8080
 - [绑定域名与 HTTPS](/guide/configuration/https) — `sudo bash install.sh ssl` 一键签发证书
 - [配置镜像加速](/guide/configuration/panel#镜像加速) — 国内拉取镜像更快
 
-### 5. 安装第一个应用
+### 5. 安装第一个应用 { lang="zh-CN" }
 
 打开 **应用商店**,选择一个应用(如 Nginx、MySQL),选择版本、填写参数,点击安装。首次启动时面板已在后台自动同步应用商店数据,无需手动操作。
 
-## 下一步
+## 下一步 { lang="zh-CN" }
 
 - [安装方式详解](/guide/installation/) — 选择最适合你的部署方式
 - [容器管理](/guide/usage/containers) — 创建并管理你的第一个容器
 - [Compose 管理](/guide/usage/compose) — 用 YAML 编排多容器应用
 - [配置详解](/guide/configuration/) — 环境变量、面板设置、数据目录
 - [常见问题](/faq) — 安装与使用中遇到问题先来这里
-  :::
+
+::::
