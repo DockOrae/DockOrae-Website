@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://dockorae.github.io/</id>
+    <title>$locale:siteConfig.title</title>
+    <updated>2026-08-31T06:07:57.610Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>DockOrae Team</name>
+        <email>i@valaxy.site</email>
+        <uri>https://github.com/DockOrae/DockOrae</uri>
+    </author>
+    <link rel="alternate" href="https://dockorae.github.io/"/>
+    <link rel="self" href="https://dockorae.github.io/atom.xml"/>
+    <subtitle>$locale:siteConfig.description</subtitle>
+    <logo>https://dockorae.github.io/DockOrae-Website/favicon.svg</logo>
+    <icon>https://dockorae.github.io/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2026 © DockOrae Team</rights>
+</feed>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>$locale:siteConfig.title</title>
+        <link>https://dockorae.github.io/</link>
+        <description>$locale:siteConfig.description</description>
+        <lastBuildDate>Mon, 31 Aug 2026 06:07:57 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>$locale:siteConfig.title</title>
+            <url>https://dockorae.github.io/DockOrae-Website/favicon.svg</url>
+            <link>https://dockorae.github.io/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2026 © DockOrae Team</copyright>
+        <atom:link href="https://dockorae.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    </channel>
+</rss>

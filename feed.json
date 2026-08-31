@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "$locale:siteConfig.title",
+    "home_page_url": "https://dockorae.github.io/",
+    "feed_url": "https://dockorae.github.io/feed.json",
+    "description": "$locale:siteConfig.description",
+    "icon": "https://dockorae.github.io/DockOrae-Website/favicon.svg",
+    "author": {
+        "name": "DockOrae Team",
+        "url": "https://github.com/DockOrae/DockOrae"
+    },
+    "items": []
+}

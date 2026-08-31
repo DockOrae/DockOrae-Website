@@ -1,0 +1,794 @@
+{
+  "pages/index.md": {
+    "contributors": [
+      {
+        "count": 1,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/index.md"
+  },
+  "pages/privacy.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/privacy.md"
+  },
+  "pages/terms.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/terms.md"
+  },
+  "pages/configuration/environment.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/configuration/environment.md"
+  },
+  "pages/configuration/https.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/configuration/https.md"
+  },
+  "pages/configuration/index.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/configuration/index.md"
+  },
+  "pages/configuration/panel.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/configuration/panel.md"
+  },
+  "pages/configuration/storage.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/configuration/storage.md"
+  },
+  "pages/ecosystem/index.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/ecosystem/index.md"
+  },
+  "pages/faq/index.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/faq/index.md"
+  },
+  "pages/guide/backup.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/backup.md"
+  },
+  "pages/guide/index.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/index.md"
+  },
+  "pages/guide/uninstall/binary.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/uninstall/binary.md"
+  },
+  "pages/guide/uninstall/docker.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/uninstall/docker.md"
+  },
+  "pages/guide/uninstall/index.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/uninstall/index.md"
+  },
+  "pages/guide/uninstall/script.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/uninstall/script.md"
+  },
+  "pages/guide/installation/binary.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/installation/binary.md"
+  },
+  "pages/guide/installation/docker-compose.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/installation/docker-compose.md"
+  },
+  "pages/guide/installation/docker.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/installation/docker.md"
+  },
+  "pages/guide/installation/index.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/installation/index.md"
+  },
+  "pages/guide/installation/script.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/installation/script.md"
+  },
+  "pages/guide/update/binary.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/update/binary.md"
+  },
+  "pages/guide/update/docker.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/update/docker.md"
+  },
+  "pages/guide/update/index.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/update/index.md"
+  },
+  "pages/guide/update/panel.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/update/panel.md"
+  },
+  "pages/guide/update/script.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/update/script.md"
+  },
+  "pages/guide/usage/appstore.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/usage/appstore.md"
+  },
+  "pages/guide/usage/compose.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/usage/compose.md"
+  },
+  "pages/guide/usage/containers.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/usage/containers.md"
+  },
+  "pages/guide/usage/images.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/usage/images.md"
+  },
+  "pages/guide/usage/index.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/usage/index.md"
+  },
+  "pages/guide/usage/networks.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/usage/networks.md"
+  },
+  "pages/guide/usage/volumes.md": {
+    "contributors": [
+      {
+        "count": 2,
+        "name": "MinimaxFlora",
+        "email": "MinimaxFlora@users.noreply.github.com",
+        "avatar": "//www.gravatar.com/avatar/93a50e14f549c3307c72298a68e109b5",
+        "github": "https://github.com/MinimaxFlora",
+        "hash": "f9b790148fbcbe9e9e039b1f1762f93f"
+      }
+    ],
+    "changeLog": [
+      {
+        "hash": "88e99a457cbe977a8ba284e7383347e9ec1c486a",
+        "date": "2026-08-31T13:16:36+08:00",
+        "message": "feat: 直接用 OpenList-Docs 模板(Valaxy + valaxy-theme-press),样式/布局/组件原样保留,内容全部替换为 DockOrae",
+        "refs": "",
+        "author_name": "MinimaxFlora",
+        "author_email": "MinimaxFlora@users.noreply.github.com",
+        "functions": []
+      }
+    ],
+    "path": "pages/guide/usage/volumes.md"
+  }
+}
