@@ -254,15 +254,9 @@
   height: 30px;
 }
 
-/* 社交图标(github 20px) */
-.VPSocialLinks .VPSocialLink {
-  width: 36px;
-  height: 36px;
-}
-
-.VPSocialLinks .VPSocialLink svg {
-  width: 20px;
-  height: 20px;
+/* 侧边栏宽度对齐 OpenList(--va-sidebar-width: 300px) */
+:root {
+  --vp-sidebar-width: 300px;
 }
 
 /* ============================================================

@@ -19,8 +19,14 @@ hero:
       link: https://github.com/DockOrae/DockOrae
       external: true
     - theme: alt
-      text: 安装 DockOrae
-      link: /guide/installation/
+      text: 免责声明
+      link: /terms#disclaimer
+    - theme: alt
+      text: 使用条款
+      link: /terms
+    - theme: alt
+      text: 隐私政策
+      link: /privacy
 ---
 
 <HomeInstall />

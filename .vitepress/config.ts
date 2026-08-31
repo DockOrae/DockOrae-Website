@@ -2,7 +2,7 @@ import { defineConfig, type DefaultTheme, type HeadConfig } from 'vitepress'
 import { readFileSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { githubSvg } from './github-icon'
+import { githubPath } from './github-icon'
 
 // ============================================================
 // DockOrae Docs — VitePress 主配置
@@ -107,6 +107,7 @@ const zhSidebar: DefaultTheme.SidebarItem[] = [
   },
   { text: '备份与恢复', link: '/guide/backup' },
   { text: '常见问题', link: '/faq' },
+  { text: '生态项目', link: '/ecosystem' },
   {
     text: '开发',
     collapsed: true,
@@ -181,6 +182,7 @@ const enSidebar: DefaultTheme.SidebarItem[] = [
   },
   { text: 'Backup & Restore', link: '/en/guide/backup' },
   { text: 'FAQ', link: '/en/faq' },
+  { text: 'Ecosystem', link: '/en/ecosystem' },
   {
     text: 'Development',
     collapsed: true,
@@ -196,6 +198,7 @@ const zhNav: DefaultTheme.NavItem[] = [
   { text: '用户指南', link: '/guide/usage/' },
   { text: '配置指南', link: '/guide/configuration/' },
   { text: 'FAQ', link: '/faq' },
+  { text: '生态项目', link: '/ecosystem' },
   {
     text: '社区',
     items: [
@@ -214,6 +217,7 @@ const enNav: DefaultTheme.NavItem[] = [
   { text: 'User Guide', link: '/en/guide/usage/' },
   { text: 'Configuration', link: '/en/guide/configuration/' },
   { text: 'FAQ', link: '/en/faq' },
+  { text: 'Ecosystem', link: '/en/ecosystem' },
   {
     text: 'Community',
     items: [
@@ -266,7 +270,8 @@ const themeConfig = {
     }
   } as DefaultTheme.LocalSearchOptions,
 
-  socialLinks: [{ icon: { svg: githubSvg }, link: githubRepo }],
+  // GitHub 图标由自定义 GitHubLink 组件渲染(位置严格对齐 OpenList:语言→滑块→GitHub)
+  socialLinks: [],
 
   // 侧边栏(顶层配置,按语言前缀分流)
   sidebar: { '/': zhSidebar, '/en/': enSidebar },
