@@ -2,6 +2,7 @@ import { defineConfig, type DefaultTheme, type HeadConfig } from 'vitepress'
 import { readFileSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { githubSvg } from './github-icon'
 
 // ============================================================
 // DockOrae Docs — VitePress 主配置
@@ -23,6 +24,9 @@ const siteUrl = (process.env.SITE_URL || 'https://dockorae.github.io').replace(/
 const githubRepo = 'https://github.com/DockOrae/DockOrae'
 const releasesUrl = `${githubRepo}/releases`
 const websiteRepo = 'https://github.com/DockOrae/DockOrae-Website'
+
+// 构建时间(页脚 Built at,格式与 OpenList 一致)
+const builtAt = new Date().toLocaleString('zh-CN', { hour12: false })
 
 /** 构建前由 .vitepress/scripts/fetch-version.mjs 写入的最新 Release 版本 */
 interface VersionInfo {
@@ -248,7 +252,7 @@ const themeConfig = {
     }
   } as DefaultTheme.LocalSearchOptions,
 
-  socialLinks: [{ icon: 'github', link: githubRepo }],
+  socialLinks: [{ icon: { svg: githubSvg }, link: githubRepo }],
 
   locales: {
     root: {
@@ -271,8 +275,8 @@ const themeConfig = {
         text: '在 GitHub 上编辑此页'
       },
       footer: {
-        message: 'GPL-3.0 License',
-        copyright: `Copyright © 2026 DockOrae Team · v${version.tag}`
+        message: `Built at ${builtAt}`,
+        copyright: `GPL-3.0 Licensed | © 2026 <a href="${githubRepo}" target="_blank">DockOrae Team</a>`
       }
     },
     en: {
@@ -298,8 +302,8 @@ const themeConfig = {
         text: 'Edit this page on GitHub'
       },
       footer: {
-        message: 'GPL-3.0 License',
-        copyright: `Copyright © 2026 DockOrae Team · v${version.tag}`
+        message: `Built at ${builtAt}`,
+        copyright: `GPL-3.0 Licensed | © 2026 <a href="${githubRepo}" target="_blank">DockOrae Team</a>`
       }
     }
   }

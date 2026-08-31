@@ -6,44 +6,21 @@ description: 'Official DockOrae documentation — a modern Docker management pan
 
 hero:
   name: DockOrae
-  text: Modern Docker Management Platform
-  tagline: A lightweight Docker management panel written in Go. Manage your Docker environment — containers, images, networks, volumes, Compose, and app store — all in one place.
   image:
-    src: /logo.svg
+    src: /favicon.svg
     alt: DockOrae
   actions:
     - theme: brand
       text: Quick Start
       link: /en/getting-started
+      type: fly
+    - theme: alt
+      text: GitHub
+      link: https://github.com/DockOrae/DockOrae
+      external: true
     - theme: alt
       text: Install DockOrae
-      link: /en/guide/installation/docker-compose
-
-features:
-  - icon: 🐳
-    title: Container Management
-    details: Create, start, stop, restart, pause, delete and inspect containers, with a built-in web terminal and real-time logs.
-  - icon: 📦
-    title: Image Management
-    details: Pull images with real-time progress, build from Dockerfile, delete and clean up unused images.
-  - icon: 🕸️
-    title: Network Management
-    details: Create custom networks, configure subnets and gateways, and view container connection relationships.
-  - icon: 💾
-    title: Volume Management
-    details: Create, delete and inspect local and NFS volumes.
-  - icon: 🧩
-    title: Compose Stacks
-    details: YAML editor with one-click deployment (streaming output), start, stop and teardown.
-  - icon: 🛍️
-    title: App Store
-    details: One-click install and upgrade of 260+ apps, with data sources automatically synced on first launch.
-  - icon: 📊
-    title: Real-time Monitoring
-    details: Real-time charts for CPU, memory, network throughput and disk I/O — panel status at a glance.
-  - icon: 🛡️
-    title: Security
-    details: TOTP two-factor authentication, security entry, domain whitelist, and Fail2ban login protection.
+      link: /en/guide/installation/
 ---
 
 <HomeInstall />
