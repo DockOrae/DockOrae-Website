@@ -268,12 +268,14 @@ const themeConfig = {
 
   socialLinks: [{ icon: { svg: githubSvg }, link: githubRepo }],
 
+  // 侧边栏(顶层配置,按语言前缀分流)
+  sidebar: { '/': zhSidebar, '/en/': enSidebar },
+
   locales: {
     root: {
       label: '简体中文',
       lang: 'zh-CN',
       nav: zhNav,
-      sidebar: { '/': zhSidebar },
       outline: { label: '本页目录', level: [2, 3] },
       lastUpdated: { text: '最后更新', formatOptions: { dateStyle: 'short', timeStyle: 'medium' } },
       docFooter: { prev: '上一页', next: '下一页' },
@@ -297,7 +299,6 @@ const themeConfig = {
       label: 'English',
       lang: 'en-US',
       nav: enNav,
-      sidebar: { '/en/': enSidebar },
       outline: { label: 'On this page', level: [2, 3] },
       lastUpdated: {
         text: 'Last updated',

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useData } from 'vitepress'
+import { useData, withBase } from 'vitepress'
 
 interface HeroAction {
   theme?: 'brand' | 'alt'
@@ -23,7 +23,8 @@ const hero = computed<HeroConfig | undefined>(
   () => (frontmatter.value as Record<string, unknown>).hero as HeroConfig
 )
 
-const logo = computed(() => hero.value?.image?.src || '/favicon.svg')
+/** 站点资源需加 base 前缀(与 VitePress 约定一致) */
+const logo = computed(() => withBase(hero.value?.image?.src || '/favicon.svg'))
 
 /** 内部链接加语言前缀(与 VitePress 约定一致) */
 function resolveLink(link: string): string {
@@ -38,7 +39,7 @@ function resolveLink(link: string): string {
     <!-- logo(fly 动画 + 紫蓝渐变光晕) -->
     <div class="open-hero-logo">
       <div class="open-hero-logo-bg" />
-      <img class="fly-animation" :src="logo" :alt="hero.name || 'DockOrae'" aspect="1">
+      <img class="fly-animation" :src="logo" :alt="hero.name || 'DockOrae'" aspect="1" />
     </div>
 
     <!-- 渐变标题 -->
