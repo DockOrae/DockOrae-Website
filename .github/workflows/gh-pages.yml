@@ -29,14 +29,26 @@ on:
       - 'package.json'
       - 'pnpm-lock.yaml'
       - '.github/workflows/gh-pages.yml'
+
+# GitHub Actions 部署 Pages 所需权限
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+# 同一时间只允许一个 Pages 部署
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 env:
   DEPLOY_PLATFORM: 'github'
-  VITE_BASE: /${{ github.event.repository.name }}/
-  SITE_URL: https://dockorae.github.io
+  # 自定义域名:base 为根路径;若用项目页地址(无域名),改为 /${{ github.event.repository.name }}/
+  VITE_BASE: /
+  SITE_URL: https://doc.kejizero.xyz
+
 jobs:
-  gh-pages:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -65,9 +77,19 @@ jobs:
           DEPLOY_PLATFORM: github
         run: pnpm run build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          force_orphan: true
+          path: ./dist
+
+  deploy:
+    needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
