@@ -1,14 +1,35 @@
-# dependencies
-node_modules
+# vite-ssg
+.vite-ssg-dist
+.vite-ssg-temp
 
-# build output
-.vitepress/dist
-.vitepress/cache
+temp/
+# temp pages
+pages/temp/
 
-# version cache (generated at build time)
-.vitepress/version.json
-
-# misc
-*.local
 .DS_Store
-npm-debug.log*
+*.local
+dist
+dist-ssr
+node_modules
+.idea/
+*.log
+.valaxy
+components.d.ts
+
+# valaxy fuse
+public/valaxy-fuse-list.json
+
+# valaxy rss
+public/feed.xml
+
+# valaxy rss
+public/feed.json
+
+# valaxy rss
+public/atom.xml
+
+# Git log prebuilt
+public/git-log.json
+
+# rollup-plugin-visualizer
+stats.html

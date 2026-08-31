@@ -1,31 +1,55 @@
 {
   "name": "dockorae-docs",
   "version": "0.0.0",
-  "private": true,
   "type": "module",
-  "packageManager": "npm@11.17.0",
+  "packageManager": "pnpm@10.12.1",
+  "license": "AGPL-3.0",
   "scripts": {
-    "dev": "vitepress dev",
-    "build": "node .vitepress/scripts/fetch-version.mjs && vitepress build && node .vitepress/scripts/gen-sitemap.mjs",
-    "docs:build": "npm run build",
-    "preview": "vitepress preview",
-    "typecheck": "vue-tsc --noEmit",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "build": "node utils/ensure-full-git.js && npm run build:ssg",
+    "build:spa": "valaxy build",
+    "build:ssg": "cross-env NODE_OPTIONS=--max-old-space-size=8192 valaxy build --ssg",
+    "dev": "valaxy",
+    "rss": "valaxy rss",
+    "serve": "vite preview",
+    "vitepress:dev": "vitepress dev",
+    "vitepress:build": "vitepress build",
+    "vitepress:preview": "vitepress preview",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@giscus/vue": "^3.1.1",
+    "@iconify-json/devicon-plain": "^1.2.31",
+    "@iconify-json/logos": "^1.2.4",
+    "@iconify-json/ri": "^1.2.5",
+    "@iconify-json/vscode-icons": "^1.2.23",
+    "valaxy": "0.25.9",
+    "valaxy-addon-algolia": "0.2.0",
+    "valaxy-addon-components": "0.1.0",
+    "valaxy-addon-git-log": "0.3.2",
+    "valaxy-theme-press": "0.25.9",
+    "vitepress-plugin-group-icons": "^1.6.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.17.0",
-    "@types/node": "^26.4.0",
-    "eslint": "^9.17.0",
-    "eslint-plugin-vue": "^9.32.0",
-    "globals": "^17.11.0",
-    "prettier": "^3.4.2",
-    "typescript": "^5.7.2",
-    "typescript-eslint": "^8.19.0",
-    "vitepress": "^1.6.4",
-    "vue": "^3.5.13",
-    "vue-tsc": "^2.2.0"
+    "@iconify-json/carbon": "1.2.9",
+    "@iconify-json/devicon": "^1.2.32",
+    "@iconify-json/simple-icons": "1.2.39",
+    "@types/node": "^24.0.15",
+    "cross-env": "^10.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "vite": "6.3.5",
+    "vitepress": "1.1.4",
+    "vue": "^3.5.17",
+    "vue-i18n": "^11.1.10",
+    "vue-tsc": "^2.2.12"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue,md,json,yml,yaml}": [
+      "prettier --write"
+    ]
   }
 }

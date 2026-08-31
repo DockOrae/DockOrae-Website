@@ -1,0 +1,44 @@
+siteConfig:
+  title: DockOrae Docs
+  description: Documentation site for DockOrae
+
+# ! Navigation bar search entry
+search:
+  tip: search
+
+# ! Navigation menu
+nav:
+  configuration: Configuration
+  guide: User Guide
+  faq: FAQ
+  community:
+    title: Community
+    issues: GitHub Issues
+    releases: GitHub Releases
+    repo: GitHub Repo
+  github: GitHub
+  ecosystem: Ecosystem
+
+# ! Category titles (setting `title` in index.md's frontmatter will not work)
+category:
+  configuration: Configuration
+  # User Guide
+  guide: User Guide
+  installation: Installation
+  usage: Usage
+  update: Update
+  uninstall: Uninstall
+  # FAQ
+  faq: FAQ
+  # Ecosystem
+  ecosystem: Ecosystem
+
+# ! Index page (layout: hero)
+hero:
+  banner: A modern Docker management panel written in Go
+  actions:
+    get-started: Quick Start
+    view-github: GitHub
+    disclaimer: Disclaimer
+    privacy: Privacy Policy
+    terms: Terms of Use

@@ -1,0 +1,44 @@
+siteConfig:
+  title: DockOrae 文档
+  description: DockOrae 官方文档网站
+
+# ! Navigation bar search entry
+search:
+  tip: search
+
+# ! Navigation menu
+nav:
+  configuration: 配置指南
+  guide: 用户指南
+  faq: FAQ
+  community:
+    title: 社区
+    issues: GitHub Issues
+    releases: GitHub Releases
+    repo: GitHub 仓库
+  github: GitHub
+  ecosystem: 生态项目
+
+# ! Category titles (setting `title` in index.md's frontmatter will not work)
+category:
+  configuration: 配置指南
+  # User Guide
+  guide: 用户指南
+  installation: 安装教程
+  usage: 使用指南
+  update: 更新
+  uninstall: 卸载
+  # FAQ
+  faq: FAQ
+  # Ecosystem
+  ecosystem: 生态项目
+
+# ! Index page (layout: hero)
+hero:
+  banner: 使用 Go 编写的现代化 Docker 管理面板
+  actions:
+    get-started: 快速开始
+    view-github: GitHub
+    disclaimer: 免责声明
+    privacy: 隐私政策
+    terms: 使用条款

@@ -1,0 +1,65 @@
+gallery:
+  tip: 搜索
+
+nav:
+  config: 配置
+  guide: 指南
+  theme: 主题
+  addon: 插件
+
+  getting-started: 起步
+  migrate-from-other: 从其他框架迁移
+
+  use-a-theme: 使用主题
+  write-a-theme: 编写主题
+  themes-gallery: 主题橱窗
+
+  why-need-addons: 为什么需要插件？
+  use-an-addon: 使用插件
+  write-an-addon: 编写插件
+  addons-gallery: 插件橱窗
+
+  ecosystem: 生态
+
+  vscode: VSCode 插件
+  client: 客户端应用
+  news: 新闻
+  community: 社区
+  dev: 参与开发
+
+  examples:
+    site: 示例站点
+
+category:
+  installation: 安装教程
+  drivers: 添加存储
+  advanced: 高级配置
+  api: API 文档
+  configuration: 配置文件细节
+  faq: 常见问题
+  migration: 迁移
+
+banner:
+  next-generation: 下一代
+  static: 静态
+  blog: 博客
+  framework: 框架
+
+hero:
+  banner: 🗂️ 一个支持多种存储的文件列表程序，使用 Gin 和 SolidJS
+  actions:
+    get-started: 快速上手
+    view-github: 查看 Github
+
+features:
+  markdown:
+    title: Markdown - 专注你的内容
+    details: 支持完整的 Markdown 语法与各类扩展格式，毫无疑问还有 SSG
+
+tooltip:
+  edit_this_page: 在 GitHub 上编辑此页
+
+post:
+  contributors: 贡献者
+
+wip: 编写中，敬请期待
