@@ -240,9 +240,18 @@
   display: none !important;
 }
 
+/* 导航标题渐变(复刻 OpenList:logo + teal→sky 渐变文字) */
+.VPNavBarTitle .title {
+  background-image: linear-gradient(to right, #99f6e4, #38bdf8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
 /* 导航 logo 尺寸 */
 .VPNavBarTitle .logo {
-  height: 26px;
+  height: 30px;
 }
 
 /* 社交图标(github 20px) */
@@ -550,36 +559,4 @@ html.dark::view-transition-new(root) {
 .vp-doc table {
   border-radius: 8px;
   overflow: hidden;
-}
-
-/* 版本徽标(青色) */
-.version-badge {
-  display: inline-flex;
-  align-items: center;
-  height: 22px;
-  padding: 0 8px;
-  margin-right: 4px;
-  border-radius: 999px;
-  border: 1px solid var(--vp-c-brand-soft);
-  background: color-mix(in srgb, var(--vp-c-brand-1) 10%, transparent);
-  color: var(--vp-c-brand-1);
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1;
-  white-space: nowrap;
-  text-decoration: none;
-  transition:
-    border-color 0.2s,
-    background 0.2s;
-}
-
-.version-badge:hover {
-  border-color: var(--vp-c-brand-1);
-  background: color-mix(in srgb, var(--vp-c-brand-1) 18%, transparent);
-}
-
-@media (max-width: 640px) {
-  .version-badge {
-    display: none;
-  }
 }

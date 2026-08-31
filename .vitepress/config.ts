@@ -193,31 +193,45 @@ const enSidebar: DefaultTheme.SidebarItem[] = [
 ]
 
 const zhNav: DefaultTheme.NavItem[] = [
-  { text: '快速开始', link: '/getting-started' },
-  { text: '安装', link: '/guide/installation/' },
-  { text: '使用', link: '/guide/usage/' },
-  { text: '配置', link: '/guide/configuration/' },
-  { text: '更新', link: '/guide/update/' },
-  { text: '卸载', link: '/guide/uninstall/' },
+  { text: '用户指南', link: '/guide/usage/' },
+  { text: '配置指南', link: '/guide/configuration/' },
   { text: 'FAQ', link: '/faq' },
-  { text: '开发', link: '/development/' }
+  {
+    text: '社区',
+    items: [
+      { text: 'GitHub Issues', link: 'https://github.com/DockOrae/DockOrae/issues' },
+      { text: 'GitHub Releases', link: 'https://github.com/DockOrae/DockOrae/releases' },
+      { text: 'GitHub 仓库', link: 'https://github.com/DockOrae/DockOrae' }
+    ]
+  },
+  {
+    text: `v${version.tag}`,
+    items: [{ text: 'Release Notes', link: 'https://github.com/DockOrae/DockOrae/releases' }]
+  }
 ]
 
 const enNav: DefaultTheme.NavItem[] = [
-  { text: 'Getting Started', link: '/en/getting-started' },
-  { text: 'Installation', link: '/en/guide/installation/' },
-  { text: 'Usage', link: '/en/guide/usage/' },
+  { text: 'User Guide', link: '/en/guide/usage/' },
   { text: 'Configuration', link: '/en/guide/configuration/' },
-  { text: 'Update', link: '/en/guide/update/' },
-  { text: 'Uninstall', link: '/en/guide/uninstall/' },
   { text: 'FAQ', link: '/en/faq' },
-  { text: 'Development', link: '/en/development/' }
+  {
+    text: 'Community',
+    items: [
+      { text: 'GitHub Issues', link: 'https://github.com/DockOrae/DockOrae/issues' },
+      { text: 'GitHub Releases', link: 'https://github.com/DockOrae/DockOrae/releases' },
+      { text: 'GitHub Repo', link: 'https://github.com/DockOrae/DockOrae' }
+    ]
+  },
+  {
+    text: `v${version.tag}`,
+    items: [{ text: 'Release Notes', link: 'https://github.com/DockOrae/DockOrae/releases' }]
+  }
 ]
 
 // 主题配置(携带自定义 version 字段,供 VersionBadge 组件使用)
 const themeConfig = {
-  // VitePress 会自动为 themeConfig.logo 应用 base,此处使用站点根路径
-  logo: { light: '/logo.svg', dark: '/logo-dark.svg' },
+  // 官方品牌 logo(DockOrae-Frontend public/images/logo.svg,蓝色集装箱)
+  logo: '/logo.svg',
   version: { tag: version.tag, html_url: version.html_url || `${releasesUrl}/latest` },
 
   search: {

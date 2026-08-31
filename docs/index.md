@@ -7,7 +7,7 @@ description: 'DockOrae 官方文档 — 现代化的 Docker 管理面板:容器�
 hero:
   name: DockOrae
   image:
-    src: /favicon.svg
+    src: /logo.svg
     alt: DockOrae
   actions:
     - theme: brand

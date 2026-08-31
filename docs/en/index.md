@@ -7,7 +7,7 @@ description: 'Official DockOrae documentation — a modern Docker management pan
 hero:
   name: DockOrae
   image:
-    src: /favicon.svg
+    src: /logo.svg
     alt: DockOrae
   actions:
     - theme: brand

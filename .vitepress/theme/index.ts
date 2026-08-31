@@ -3,7 +3,6 @@ import type { Theme } from 'vitepress'
 import { h } from 'vue'
 
 import './custom.css'
-import VersionBadge from './components/VersionBadge.vue'
 import HomeInstall from './components/HomeInstall.vue'
 import OpenHero from './components/OpenHero.vue'
 import AppearanceSwitch from './components/AppearanceSwitch.vue'
@@ -15,8 +14,6 @@ export default {
     return h(DefaultTheme.Layout, null, {
       // 首页 hero:复刻 OpenList(默认 VPHomeHero 已 CSS 隐藏)
       'home-hero-before': () => h(OpenHero),
-      // 导航栏左侧(logo 之后):当前版本徽标
-      'nav-bar-content-before': () => h(VersionBadge),
       // 导航栏右侧:主题滑块 + 语言切换单图标(默认外观/语言按钮已 CSS 隐藏)
       'nav-bar-content-after': () =>
         h(
