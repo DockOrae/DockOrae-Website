@@ -38,7 +38,7 @@ function resolveLink(link: string): string {
     <!-- logo(fly 动画 + 紫蓝渐变光晕) -->
     <div class="open-hero-logo">
       <div class="open-hero-logo-bg" />
-      <img class="fly-animation" :src="logo" :alt="hero.name || 'DockOrae'" aspect="1" />
+      <img class="fly-animation" :src="logo" :alt="hero.name || 'DockOrae'" aspect="1">
     </div>
 
     <!-- 渐变标题 -->
