@@ -1,0 +1,31 @@
+{
+  "name": "dockorae-docs",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "npm@11.17.0",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "node .vitepress/scripts/fetch-version.mjs && vitepress build && node .vitepress/scripts/gen-sitemap.mjs",
+    "docs:build": "npm run build",
+    "preview": "vitepress preview",
+    "typecheck": "vue-tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^26.4.0",
+    "eslint": "^9.17.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "globals": "^17.11.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.19.0",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.13",
+    "vue-tsc": "^2.2.0"
+  }
+}

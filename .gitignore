@@ -1,0 +1,14 @@
+# dependencies
+node_modules
+
+# build output
+.vitepress/dist
+.vitepress/cache
+
+# version cache (generated at build time)
+.vitepress/version.json
+
+# misc
+*.local
+.DS_Store
+npm-debug.log*

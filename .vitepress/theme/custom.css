@@ -1,0 +1,115 @@
+/* ============================================================
+   DockOrae Docs — 品牌主题
+   粉色品牌色 #ec4899(与 DockOrae 面板一致),深浅双模式
+   ============================================================ */
+
+:root {
+  /* 品牌色(浅色模式,链接可读性优先) */
+  --vp-c-brand-1: #db2777;
+  --vp-c-brand-2: #ec4899;
+  --vp-c-brand-3: #be185d;
+  --vp-c-brand-soft: rgba(236, 72, 153, 0.14);
+
+  /* 首页 hero */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #ec4899 10%, #be185d 60%, #a21caf 100%);
+  --vp-home-hero-image-background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(236, 72, 153, 0.14) 0%,
+    transparent 70%
+  );
+  --vp-home-hero-image-filter: blur(44px);
+
+  /* 圆角统一 */
+  --vp-code-border-radius: 8px;
+  --vp-code-block-border-radius: 10px;
+}
+
+.dark {
+  /* 品牌色(深色模式,亮粉提升对比度) */
+  --vp-c-brand-1: #f472b6;
+  --vp-c-brand-2: #ec4899;
+  --vp-c-brand-3: #db2777;
+  --vp-c-brand-soft: rgba(236, 72, 153, 0.18);
+
+  --vp-home-hero-image-background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(236, 72, 153, 0.2) 0%,
+    transparent 70%
+  );
+}
+
+/* ---------- 首页 hero ---------- */
+.VPHero .name,
+.VPHero .text {
+  letter-spacing: -0.02em;
+}
+
+.VPHero .tagline {
+  max-width: 640px;
+  line-height: 1.6;
+}
+
+/* ---------- 特性卡片 ---------- */
+.VPFeatures .VPFeature {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.VPFeatures .VPFeature:hover {
+  transform: translateY(-2px);
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 8px 24px rgba(236, 72, 153, 0.12);
+}
+
+.VPFeatures .VPFeature .icon {
+  background: var(--vp-c-brand-soft);
+  border: 1px solid color-mix(in srgb, var(--vp-c-brand-1) 30%, transparent);
+  border-radius: 10px;
+}
+
+/* ---------- 代码块 ---------- */
+.vp-doc div[class*='language-'] {
+  border: 1px solid var(--vp-c-divider);
+}
+
+/* ---------- 链接下划线柔和 ---------- */
+.vp-doc a {
+  text-decoration: none;
+}
+
+.vp-doc a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- 表格 ---------- */
+.vp-doc table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ---------- 徽标(行内,用于"官方 / 推荐"标注) ---------- */
+.docs-badge {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  vertical-align: 2px;
+}
+
+.docs-badge--brand {
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  border: 1px solid color-mix(in srgb, var(--vp-c-brand-1) 35%, transparent);
+}
+
+.docs-badge--neutral {
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-2);
+  border: 1px solid var(--vp-c-divider);
+}
